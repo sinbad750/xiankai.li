@@ -137,9 +137,9 @@ void Init_Config_IO(void)
 
 	//GPIO_Init(GPIOD, GPIO_PIN_4, GPIO_MODE_OUT_PP_HIGH_FAST);  // TX_RX
 
-	//GPIO_Init(GPIOB, GPIO_PIN_4, GPIO_MODE_OUT_PP_HIGH_FAST);  //  AMP MUTE
+	GPIO_Init(GPIOB, GPIO_PIN_4, GPIO_MODE_OUT_PP_HIGH_FAST);  //  AMP MUTE
 
-	//GPIO_Init(GPIOB, GPIO_PIN_6, GPIO_MODE_IN_PU_NO_IT);  //sod key
+	GPIO_Init(GPIOB, GPIO_PIN_6, GPIO_MODE_IN_PU_NO_IT);  //sod key
 
 	
 //////////////////////////////////////////HARMAN////////////////////////////////////////////////////////////////
