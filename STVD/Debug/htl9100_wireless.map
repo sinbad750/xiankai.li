@@ -1,0 +1,2106 @@
+
+Map of Debug\htl9100_wireless.sm8 from link file Debug\htl9100_wireless.lkf - Tue Jan 09 14:09:56 2018
+
+
+                               --------
+                               Segments
+                               --------
+
+start 00009080 end 00009a01 length  2433 segment .const
+start 00009a56 end 0000c881 length 11819 segment .text
+start 0000c881 end 0000ca37 length   438 segment .fconst
+start 00004000 end 00004000 length     0 segment .eeprom
+start 00000000 end 00000000 length     0 segment .bsct
+start 00000000 end 0000000a length    10 segment .ubsct
+start 0000000a end 0000000a length     0 segment .bit
+start 0000000a end 0000000a length     0 segment .share
+start 00000100 end 0000014d length    77 segment .data, initialized
+start 00009a09 end 00009a56 length    77 segment .data, from
+start 0000014d end 0000031a length   461 segment .bss
+start 00000000 end 00000e0e length  3598 segment .info.
+start 00000000 end 0000b474 length 46196 segment .debug
+start 00009000 end 00009080 length   128 segment .const
+start 00009a01 end 00009a09 length     8 segment .init
+
+
+                               -------
+                               Modules
+                               -------
+
+C:\Program Files\COSMIC\CXSTM8\Lib\crtsi0.sm8:
+start 00009a56 end 00009aa1 length    75 section .text
+start 0000014d end 0000014d length     0 section .bss
+start 00000000 end 00000000 length     0 section .ubsct
+start 00000000 end 0000002f length    47 section .info.
+
+Debug\stm8s_spi.o:
+start 00009aa1 end 00009bd1 length   304 section .text
+start 00000000 end 00000f18 length  3864 section .debug
+start 0000002f end 000000b0 length   129 section .info.
+
+Debug\bt830.o:
+start ******** end ******** length     0 section .text *** removed ***
+start ******** end ******** length     0 section .data *** removed ***
+start ******** end ******** length     0 section .bss *** removed ***
+start 00000f18 end 0000165c length  1860 section .debug
+start 000000b0 end 0000012d length   125 section .info.
+start ******** end ******** length     0 section .const *** removed ***
+
+Debug\key.o:
+start 00009bd1 end 00009d85 length   436 section .text
+start 00000100 end 00000108 length     8 section .data
+start 0000014d end 00000151 length     4 section .bss
+start 0000165c end 00001ac0 length  1124 section .debug
+start 0000012d end 000001a8 length   123 section .info.
+start ******** end ******** length     0 section .const *** removed ***
+
+Debug\tas5711.o:
+start 00009d85 end 0000a02c length   679 section .text
+start 00001ac0 end 00002018 length  1368 section .debug
+start 000001a8 end 00000227 length   127 section .info.
+start 00009080 end 000090ea length   106 section .const
+start 0000c881 end 0000ca37 length   438 section .fconst
+
+Debug\stm8s_uart2.o:
+start 0000a02c end 0000a3f7 length   971 section .text
+start 00002018 end 000035bb length  5539 section .debug
+start 00000227 end 000002aa length   131 section .info.
+start 000090ea end 000090ee length     4 section .const
+
+Debug\charge.o:
+start 0000a3f7 end 0000a6a3 length   684 section .text
+start 00000108 end 00000112 length    10 section .data
+start 00000151 end 00000169 length    24 section .bss
+start 000035bb end 00003cbe length  1795 section .debug
+start 000002aa end 00000328 length   126 section .info.
+start ******** end ******** length     0 section .const *** removed ***
+
+Debug\stm8s_adc1.o:
+start 0000a6a3 end 0000a7e6 length   323 section .text
+start 00003cbe end 00004875 length  2999 section .debug
+start 00000328 end 000003aa length   130 section .info.
+
+Debug\stm8s_clk.o:
+start 0000a7e6 end 0000a9a9 length   451 section .text
+start 00004875 end 000054d3 length  3166 section .debug
+start 000003aa end 0000042b length   129 section .info.
+start 000090ee end 000090fa length    12 section .const
+
+Debug\stm8s_flash.o:
+start 0000a9a9 end 0000ab40 length   407 section .text
+start 000054d3 end 00005f2a length  2647 section .debug
+start 0000042b end 000004ae length   131 section .info.
+
+Debug\stm8s_gpio.o:
+start 0000ab40 end 0000abb1 length   113 section .text
+start 00005f2a end 00006719 length  2031 section .debug
+start 000004ae end 00000530 length   130 section .info.
+
+Debug\stm8s_tim4.o:
+start 0000abb1 end 0000ac11 length    96 section .text
+start 00006719 end 00006bd8 length  1215 section .debug
+start 00000530 end 000005b2 length   130 section .info.
+
+Debug\stm8s_wwdg.o:
+start 0000ac11 end 0000ac16 length     5 section .text
+start 00006bd8 end 00006c94 length   188 section .debug
+start 000005b2 end 00000634 length   130 section .info.
+
+Debug\i2c.o:
+start 0000ac16 end 0000b00c length  1014 section .text
+start 00000112 end 00000114 length     2 section .data
+start 00000169 end 00000171 length     8 section .bss
+start 00006c94 end 00007939 length  3237 section .debug
+start 00000634 end 000006af length   123 section .info.
+
+Debug\led.o:
+start 0000b00c end 0000b2c6 length   698 section .text
+start 00000114 end 0000011f length    11 section .data
+start 00000171 end 0000017c length    11 section .bss
+start 00007939 end 000084d5 length  2972 section .debug
+start 000006af end 0000072a length   123 section .info.
+start 000090fa end 00009120 length    38 section .const
+
+Debug\main.o:
+start 0000b2c6 end 0000b82d length  1383 section .text
+start 0000011f end 00000142 length    35 section .data
+start 0000017c end 00000181 length     5 section .bss
+start 000084d5 end 00008de9 length  2324 section .debug
+start 0000072a end 000007a6 length   124 section .info.
+start ******** end ******** length     0 section .const *** removed ***
+
+Debug\stm8s_it.o:
+start 0000b82d end 0000b918 length   235 section .text
+start 00000142 end 00000143 length     1 section .data
+start 00000181 end 00000185 length     4 section .bss
+start 00008de9 end 0000954c length  1891 section .debug
+start 000007a6 end 00000826 length   128 section .info.
+
+Debug\uart.o:
+start 0000b918 end 0000bb13 length   507 section .text
+start 00000143 end 00000144 length     1 section .data
+start 00000185 end 0000020b length   134 section .bss
+start 0000954c end 00009c46 length  1786 section .debug
+start 00000826 end 000008a2 length   124 section .info.
+
+Debug\upg.o:
+start 0000bb13 end 0000bde7 length   724 section .text
+start 00000144 end 00000149 length     5 section .data
+start 0000020b end 0000030e length   259 section .bss
+start 00009c46 end 0000a398 length  1874 section .debug
+start 000008a2 end 0000091d length   123 section .info.
+start 00009120 end 00009965 length  2117 section .const
+
+Debug\wireless_func.o:
+start 0000bde7 end 0000c5f8 length  2065 section .text
+start 00000149 end 0000014d length     4 section .data
+start 0000030e end 0000031a length    12 section .bss
+start 0000a398 end 0000b34e length  4022 section .debug
+start 0000091d end 000009a2 length   133 section .info.
+start 00009965 end 00009a01 length   156 section .const
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)imul.o:
+start 0000c5f8 end 0000c619 length    33 section .text
+start 000009a2 end 000009d0 length    46 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)itolx.o:
+start 0000c619 end 0000c627 length    14 section .text
+start 000009d0 end 000009ff length    47 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lgadc.o:
+start 0000c627 end 0000c637 length    16 section .text
+start 000009ff end 00000a2e length    47 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lgadd.o:
+start 0000c637 end 0000c64e length    23 section .text
+start 00000a2e end 00000a5d length    47 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)llsh.o:
+start 0000c64e end 0000c65d length    15 section .text
+start 00000a5d end 00000a8b length    46 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lreg.o:
+start 00000000 end 00000004 length     4 section .ubsct
+start 00000a8b end 00000ab9 length    46 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lsub.o:
+start 0000c65d end 0000c675 length    24 section .text
+start 00000ab9 end 00000ae7 length    46 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)ltor.o:
+start 0000c675 end 0000c687 length    18 section .text
+start 00000ae7 end 00000b15 length    46 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)ludiv.o:
+start 0000c687 end 0000c69b length    20 section .text
+start 00000b15 end 00000b44 length    47 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)ldiv.o:
+start 0000c69b end 0000c786 length   235 section .text
+start 00000b44 end 00000b72 length    46 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lgneg.o:
+start 0000c786 end 0000c799 length    19 section .text
+start 00000b72 end 00000ba1 length    47 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lneg.o:
+start 0000c799 end 0000c7ae length    21 section .text
+start 00000ba1 end 00000bcf length    46 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lursh.o:
+start 0000c7ae end 0000c7bd length    15 section .text
+start 00000bcf end 00000bfe length    47 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)pgadc.o:
+start 0000c7bd end 0000c7c9 length    12 section .text
+start 00000bfe end 00000c2d length    47 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)rtol.o:
+start 0000c7c9 end 0000c7db length    18 section .text
+start 00000c2d end 00000c5b length    46 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)sdivx.o:
+start 0000c7db end 0000c806 length    43 section .text
+start 00000c5b end 00000c8a length    47 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)smul.o:
+start 0000c806 end 0000c845 length    63 section .text
+start 00000c8a end 00000cb8 length    46 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)umul.o:
+start 0000c845 end 0000c881 length    60 section .text
+start 00000cb8 end 00000ce6 length    46 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)xreg.o:
+start 00000004 end 00000007 length     3 section .ubsct
+start 00000ce6 end 00000d14 length    46 section .info.
+
+(C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)yreg.o:
+start 00000007 end 0000000a length     3 section .ubsct
+start 00000d14 end 00000d42 length    46 section .info.
+
+Debug\stm8_interrupt_vector.o:
+start 0000b34e end 0000b474 length   294 section .debug
+start 00000d42 end 00000dcf length   141 section .info.
+start 00009000 end 00009080 length   128 section .const
+
+
+                             -----------
+                             Stack usage
+                             -----------
+
+Debug\charge.o:
+_Battery_Charge_Status                 22   (3)
+_Battery_Status_Detect                  7   (2)
+_Calculate_Voltage                     12   (9)
+_Charge_Manager_Loop                   24   (2)
+_Get_Battery_Status                    19   (2)
+_Get_Battery_temper_Status             19   (2)
+_Voltage_Detect                        17   (5)
+
+Debug\i2c.o:
+_I2C_8052_Read_Buf                     23   (6)
+_I2C_8052_Write_Buf                    24   (7)
+_I2C_Read_Buf                          31   (7)
+_I2C_Read_Buf_W                        32   (6)
+_I2C_Read_TAS5711                  >   37   (6)
+_I2C_Write_Buf                         24   (7)
+_I2C_Write_Buf_W                       26   (9)
+_I2C_Write_TAS5711                 >   30   (6)
+_I2C_Write_Tpa5050                 >   30   (6)
+_SDA_IN                                 9   (2)
+_SDA_OUT                                4   (2)
+_Wireless_IIC_delay                     3   (3)
+_Wireless_SCL                           2   (2)
+_Wireless_SDA                           2   (2)
+_Wireless_SDA_statu                     7   (2)
+_Wireless_i2c_Addr                 >    2   (2)
+_i2c_bit_in                            12   (3)
+_i2c_bit_in_ACK                        13   (4)
+_i2c_bit_out                           10   (2)
+_i2c_byte_in                           17   (5)
+_i2c_byte_out                          17   (4)
+_i2c_recv                              24   (7)
+_i2c_recv_W                            22   (5)
+_i2c_start                             10   (2)
+_i2c_stop                              10   (2)
+_vCheck_SCL_Status                      8   (3)
+
+Debug\key.o:
+_Key_Scan                              11   (3)
+_Key_Service                           37   (3)
+_Key_Value                              8   (3)
+_Power_Off_direct                  >   37   (2)
+_Power_onoff_board                      7   (2)
+
+Debug\led.o:
+_Led_Display_Loop                      38   (2)
+_Wireless_Display_Test_Mode            36   (2)
+_vLedTick_10Ms                          2   (2)
+_vLed_Disp_BatteryCharge                2   (2)
+_vLed_Disp_BatteryCharge_TimeOut        2   (2)
+_vLed_Disp_BatteryEmpty                 2   (2)
+_vLed_Disp_BatteryLow                   2   (2)
+_vLed_Disp_Charge_Full                  2   (2)
+_vLed_Disp_DisConnect                   2   (2)
+_vLed_Disp_Docked                       2   (2)
+_vLed_Disp_Docking                      2   (2)
+_vLed_Disp_Docking_BatteryLow      >    2   (2)
+_vLed_Disp_Parring                      2   (2)
+_vLed_Disp_Separate                     2   (2)
+_vLed_Disp_Sod_Stereo              >    2   (2)
+_vLed_Disp_Standby                      2   (2)
+_vLed_Disp_USB_BatteryCharge            2   (2)
+_vLed_Disp_UnDocking                    2   (2)
+_vLed_Disp_UnDocking_BatteryLow         2   (2)
+_vLed_Disp_pre_Separate                 2   (2)
+_vLed_Display_Upg                       3   (3)
+_vLed_Light_Process                     8   (3)
+
+Debug\main.o:
+_CLOCK_Init                            13   (2)
+_Init_ADC1                             17   (2)
+_Init_ADC9                             17   (2)
+_Init_Config_IO                         8   (2)
+_MCU_init                              54   (2)
+_System_Init                           22   (3)
+_System_Main_Loop                      65   (2)
+_TIM4_Config_1MS                        6   (2)
+_WaitForHSEStartUp                     11   (4)
+_main                              >   67   (2)
+_system_1Ms_Timer                      13   (2)
+_system_1s_Timer                       37   (2)
+
+Debug\stm8s_adc1.o:
+_ADC1_ClearFlag                         2   (2)
+_ADC1_ConversionConfig                  5   (5)
+_ADC1_ExternalTriggerConfig             4   (4)
+_ADC1_GetConversionValue                7   (7)
+_ADC1_GetFlagStatus                     2   (2)
+_ADC1_Init                             15   (10)
+_ADC1_PrescalerConfig                   3   (3)
+_ADC1_SchmittTriggerConfig              4   (4)
+_ADC1_StartConversion                   2   (2)
+
+Debug\stm8s_clk.o:
+_CLK_CCOCmd                             2   (2)
+_CLK_CCOConfig                          3   (3)
+_CLK_ClockSwitchConfig                 10   (10)
+_CLK_DeInit                             2   (2)
+_CLK_GetClockFreq                      25   (11)
+_CLK_GetFlagStatus                      7   (7)
+_CLK_GetSYSCLKSource                    2   (2)
+_CLK_HSECmd                             2   (2)
+_CLK_SYSCLKConfig                       3   (3)
+
+Debug\stm8s_flash.o:
+_FLASH_EraseOptionByte             >    7   (2)
+_FLASH_GetBootSize                 >    9   (6)
+_FLASH_GetFlagStatus               >    3   (3)
+_FLASH_GetLowPowerMode             >    2   (2)
+_FLASH_GetProgrammingTime          >    2   (2)
+_FLASH_Lock                             2   (2)
+_FLASH_ProgramByte                      7   (7)
+_FLASH_ProgramOptionByte           >   10   (5)
+_FLASH_ProgramWord                 >   10   (10)
+_FLASH_ReadByte                         6   (6)
+_FLASH_ReadOptionByte              >    6   (6)
+_FLASH_SetLowPowerMode             >    3   (3)
+_FLASH_SetProgrammingTime               2   (2)
+_FLASH_Unlock                           2   (2)
+_FLASH_WaitForLastOperation             5   (5)
+
+Debug\stm8s_gpio.o:
+_GPIO_Init                              6   (6)
+_GPIO_ReadInputPin                      5   (5)
+_GPIO_ReadOutputPin                >    5   (5)
+_GPIO_WriteHigh                         5   (5)
+_GPIO_WriteLow                          5   (5)
+_GPIO_WriteReverse                 >    5   (5)
+
+Debug\stm8s_it.o:
+f_ADC1_IRQHandler                  >    5   (5)
+f_AWU_IRQHandler                   >    5   (5)
+f_CLK_IRQHandler                   >    5   (5)
+f_EEPROM_EEC_IRQHandler            >    5   (5)
+f_EXTI_PORTA_IRQHandler            >    5   (5)
+f_EXTI_PORTB_IRQHandler            >    5   (5)
+f_EXTI_PORTC_IRQHandler            >    5   (5)
+f_EXTI_PORTD_IRQHandler            >    5   (5)
+f_EXTI_PORTE_IRQHandler            >    5   (5)
+f_I2C_IRQHandler                   >    5   (5)
+f_NonHandledInterrupt              >    5   (5)
+f_SPI_IRQHandler                   >    5   (5)
+f_TIM1_CAP_COM_IRQHandler          >    5   (5)
+f_TIM1_UPD_OVF_TRG_BRK_IRQHandler  >    5   (5)
+f_TIM2_CAP_COM_IRQHandler          >    5   (5)
+f_TIM2_UPD_OVF_BRK_IRQHandler      >    5   (5)
+f_TIM3_CAP_COM_IRQHandler          >    5   (5)
+f_TIM3_UPD_OVF_BRK_IRQHandler      >    5   (5)
+f_TIM4_UPD_OVF_IRQHandler          >   24   (11)
+f_TLI_IRQHandler                   >    5   (5)
+f_TRAP_IRQHandler                  >    5   (5)
+f_UART2_RX_IRQHandler              >   76   (13)
+f_UART2_TX_IRQHandler              >    5   (5)
+
+Debug\stm8s_spi.o:
+_SPI_BiDirectionalLineConfig       >    2   (2)
+_SPI_CalculateCRCCmd                    5   (3)
+_SPI_ClearFlag                     >    2   (2)
+_SPI_ClearITPendingBit             >    3   (3)
+_SPI_Cmd                                2   (2)
+_SPI_DeInit                             2   (2)
+_SPI_GetCRC                        >    3   (3)
+_SPI_GetCRCPolynomial              >    2   (2)
+_SPI_GetFlagStatus                      3   (3)
+_SPI_GetITStatus                   >    5   (5)
+_SPI_ITConfig                      >    5   (5)
+_SPI_Init                              10   (10)
+_SPI_NSSInternalSoftwareCmd        >    2   (2)
+_SPI_ReceiveData                        2   (2)
+_SPI_ResetCRC                      >    7   (2)
+_SPI_SendData                           2   (2)
+_SPI_TransmitCRC                   >    2   (2)
+
+Debug\stm8s_tim4.o:
+_TIM4_ClearITPendingBit                 2   (2)
+_TIM4_Cmd                               2   (2)
+_TIM4_DeInit                            2   (2)
+_TIM4_GetITStatus                  >    3   (3)
+_TIM4_ITConfig                          4   (4)
+_TIM4_TimeBaseInit                      2   (2)
+
+Debug\stm8s_uart2.o:
+_UART2_ClearFlag                   >    4   (4)
+_UART2_ClearITPendingBit                4   (4)
+_UART2_Cmd                              2   (2)
+_UART2_DeInit                           3   (3)
+_UART2_GetFlagStatus                    5   (5)
+_UART2_GetITStatus                 >    6   (6)
+_UART2_ITConfig                         7   (7)
+_UART2_Init                            50   (25)
+_UART2_IrDACmd                     >    2   (2)
+_UART2_IrDAConfig                  >    2   (2)
+_UART2_LINBreakDetectionConfig     >    2   (2)
+_UART2_LINCmd                      >    2   (2)
+_UART2_LINConfig                   >    5   (5)
+_UART2_ReceiveData8                     2   (2)
+_UART2_ReceiveData9                >    4   (4)
+_UART2_ReceiverWakeUpCmd           >    2   (2)
+_UART2_SendBreak                   >    2   (2)
+_UART2_SendData8                        2   (2)
+_UART2_SendData9                   >    4   (4)
+_UART2_SetAddress                  >    3   (3)
+_UART2_SetGuardTime                >    2   (2)
+_UART2_SetPrescaler                >    2   (2)
+_UART2_SmartCardCmd                >    2   (2)
+_UART2_SmartCardNACKCmd            >    2   (2)
+_UART2_WakeUpConfig                >    2   (2)
+
+Debug\stm8s_wwdg.o:
+_WWDG_SWReset                           2   (2)
+
+Debug\tas5711.o:
+_Dsp_Send_N_FF                     >   12   (6)
+_Dsp_WriteData                         15   (9)
+_Dsp_Write_buf                     >   13   (7)
+_SPI_DSP_Init                          12   (2)
+_SPI_DSP_ReadByte                  >    8   (2)
+_SPI_DSP_SendByte                       6   (3)
+_uHAL_Akm7719_SPI_Write                10   (4)
+_uHAL_Akm7719_SPI_Write_VOL        >   13   (7)
+_vAPP_Akm7719_Dsp_Init                 17   (2)
+_vHAL_Akm7719_control_reg_init         13   (3)
+
+Debug\uart.o:
+_Is_Connect_Code                        2   (2)
+_MCU_Upgrade                           10   (2)
+_Updata_Start                          11   (2)
+_Upg_Device                             2   (2)
+_Upgrade_Loop                          65   (2)
+_Upgrade_RxData_Process                63   (3)
+_Wait_For_mSec                          6   (6)
+_Wireless_Enter_Upgrade                63   (2)
+_initUart                              52   (2)
+_myputc                                 9   (4)
+_myputstr                              14   (5)
+_vClear_RxBuff                          3   (3)
+_vRxData_Start                          2   (2)
+_vUpg_Over                              2   (2)
+
+Debug\upg.o:
+_I2C_Read_Buf2                         38   (6)
+_I2C_Write_Buf2                        34   (8)
+_I2C_Write_Byte2                       39   (5)
+_PassThrough_Sector_Erase              50   (9)
+_PassThrough_Write                     56   (15)
+_Waitfor_GPCS41_ADDR                   41   (3)
+_Waitfor_ISDLC_ADDR                    43   (5)
+_Wireless_Reset                         8   (2)
+_Wireless_Tx_Upgrade                   60   (4)
+_Wireless_Upg_Init                     61   (11)
+_vLed_Display_Erase                     3   (3)
+
+Debug\wireless_func.o:
+_Ask_Wireless_Rx_Version               34   (10)
+_Change_to_Strereo_mode            >   47   (10)
+_Connect_Code_Compare                  10   (4)
+_HexGroupToString                      15   (12)
+_HexToASCII                             3   (3)
+_Link_MainUnit_State_Process            7   (2)
+_Notification_PowerOff             >   34   (10)
+_Report_Charge_Status                  35   (11)
+_Rest_Pairing_Code                 >   39   (2)
+_Save_Connect_Code_To_Eeprom           11   (4)
+_Save_default_Code_To_Eeprom            9   (2)
+_Send_Surr_Info                        54   (2)
+_System_PowerOff                       34   (10)
+_Tx_Info                               19   (5)
+_Wireless_Goto_Pairing                 34   (10)
+_Wireless_RxInfoProcess                63   (11)
+_Wireless_State_Process                 9   (2)
+_Wireless_Write_ConectCode             35   (11)
+_Wireless_Write_SOD_ConectCode         37   (13)
+_Wireless_Write_main_ConectCode        37   (13)
+_clear_rx_buffuer                      34   (10)
+_info_FCC_mode                     >   34   (10)
+_info_Stereo_Wireless_Rx_OFF       >   34   (10)
+_info_Stereo_Wireless_Rx_mute_OFF  >   35   (11)
+_info_Tx_Wireless_Sod_BT_mode          35   (11)
+_info_Wireless_Rx_BT_state         >   35   (11)
+
+Stack size: 143
+
+
+                              ---------
+                              Call tree
+                              ---------
+   1 > _Change_to_Strereo_mode: (10)
+   2      + _I2C_8052_Write_Buf: (7)
+   3      |    + _i2c_byte_out: (4)
+   4      |    |    + _i2c_bit_in_ACK: (4)
+   5      |    |    |    + _SDA_IN: (2)
+   6      |    |    |    |    + _Wireless_SDA_statu: (2)
+   7      |    |    |    |    |    + _GPIO_ReadInputPin: (5)
+          |    |    |    |    | 
+          |    |    |    | 
+   8      |    |    |    + _Wireless_IIC_delay: (3)
+   9      |    |    |    + _Wireless_SCL: (2)
+  10      |    |    |    + _Wireless_SDA: (2)
+  11      |    |    |    + _vCheck_SCL_Status: (3)
+  12      |    |    |    |    + _GPIO_ReadInputPin --> 7
+  13      |    |    |    |    + _GPIO_WriteHigh: (5)
+          |    |    |    | 
+          |    |    | 
+  14      |    |    + _i2c_bit_out: (2)
+  15      |    |    |    + _SDA_OUT: (2)
+  16      |    |    |    |    + _Wireless_SDA --> 10
+          |    |    |    | 
+  17      |    |    |    + _Wireless_IIC_delay --> 8
+  18      |    |    |    + _Wireless_SCL --> 9
+  19      |    |    |    + _vCheck_SCL_Status --> 11
+          |    |    | 
+          |    | 
+  20      |    + _i2c_start: (2)
+  21      |    |    + _Wireless_IIC_delay --> 8
+  22      |    |    + _Wireless_SCL --> 9
+  23      |    |    + _Wireless_SDA --> 10
+  24      |    |    + _vCheck_SCL_Status --> 11
+          |    | 
+  25      |    + _i2c_stop: (2)
+  26      |    |    + _Wireless_IIC_delay --> 8
+  27      |    |    + _Wireless_SCL --> 9
+  28      |    |    + _Wireless_SDA --> 10
+  29      |    |    + _vCheck_SCL_Status --> 11
+          |    | 
+          | 
+  30      + _Wireless_Write_SOD_ConectCode: (13)
+  31      |    + _FLASH_Lock: (2)
+  32      |    + _FLASH_ReadByte: (6)
+  33      |    + _FLASH_Unlock: (2)
+  34      |    + _I2C_8052_Write_Buf --> 2
+          | 
+       
+  35 > _Dsp_Send_N_FF: (6)
+  36      + _SPI_DSP_SendByte: (3)
+  37      |    + _SPI_GetFlagStatus: (3)
+  38      |    + _SPI_ReceiveData: (2)
+  39      |    + _SPI_SendData: (2)
+          | 
+       
+  40 > _Dsp_Write_buf: (7)
+  41      + _SPI_DSP_SendByte --> 36
+       
+  42 > _FLASH_EraseOptionByte: (2)
+  43      + _FLASH_WaitForLastOperation: (5)
+       
+  44 > _FLASH_GetBootSize: (6)
+
+  45 > _FLASH_GetFlagStatus: (3)
+
+  46 > _FLASH_GetLowPowerMode: (2)
+
+  47 > _FLASH_GetProgrammingTime: (2)
+
+  48 > _FLASH_ProgramOptionByte: (5)
+  49      + _FLASH_WaitForLastOperation --> 43
+       
+  50 > _FLASH_ProgramWord: (10)
+
+  51 > _FLASH_ReadOptionByte: (6)
+
+  52 > _FLASH_SetLowPowerMode: (3)
+
+  53 > _GPIO_ReadOutputPin: (5)
+
+  54 > _GPIO_WriteReverse: (5)
+
+  55 > _I2C_Read_TAS5711: (6)
+  56      + _I2C_Read_Buf: (7)
+  57      |    + _I2C_Write_Buf: (7)
+  58      |    |    + _i2c_byte_out --> 3
+  59      |    |    + _i2c_start --> 20
+  60      |    |    + _i2c_stop --> 25
+          |    | 
+  61      |    + _Wireless_IIC_delay --> 8
+  62      |    + _Wireless_SCL --> 9
+  63      |    + _Wireless_SDA --> 10
+  64      |    + _i2c_recv: (7)
+  65      |    |    + _i2c_byte_in: (5)
+  66      |    |    |    + _Wireless_SDA --> 10
+  67      |    |    |    + _i2c_bit_in: (3)
+  68      |    |    |    |    + _SDA_IN --> 5
+  69      |    |    |    |    + _Wireless_IIC_delay --> 8
+  70      |    |    |    |    + _Wireless_SCL --> 9
+  71      |    |    |    |    + _Wireless_SDA --> 10
+  72      |    |    |    |    + _vCheck_SCL_Status --> 11
+          |    |    |    | 
+  73      |    |    |    + _i2c_bit_out --> 14
+          |    |    | 
+  74      |    |    + _i2c_byte_out --> 3
+  75      |    |    + _i2c_start --> 20
+  76      |    |    + _i2c_stop --> 25
+          |    | 
+  77      |    + _i2c_stop --> 25
+          | 
+       
+  78 > _I2C_Write_TAS5711: (6)
+  79      + _I2C_Write_Buf --> 57
+       
+  80 > _I2C_Write_Tpa5050: (6)
+  81      + _I2C_Write_Buf --> 57
+       
+  82 > _Notification_PowerOff: (10)
+  83      + _I2C_8052_Write_Buf --> 2
+       
+  84 > _Power_Off_direct: (2)
+  85      + _GPIO_Init: (6)
+  86      + _Power_onoff_board: (2)
+  87      |    + _GPIO_WriteHigh --> 13
+  88      |    + _GPIO_WriteLow: (5)
+          | 
+  89      + _System_PowerOff: (10)
+  90      |    + _I2C_8052_Write_Buf --> 2
+          | 
+  91      + _Wait_For_mSec: (6)
+  92      + _info_Tx_Wireless_Sod_BT_mode: (11)
+  93      |    + _I2C_8052_Write_Buf --> 2
+          | 
+       
+  94 > _Rest_Pairing_Code: (2)
+  95      + _Save_default_Code_To_Eeprom: (2)
+  96      |    + _FLASH_Lock --> 31
+  97      |    + _FLASH_ProgramByte: (7)
+  98      |    + _FLASH_SetProgrammingTime: (2)
+  99      |    + _FLASH_Unlock --> 33
+ 100      |    + _Wait_For_mSec --> 91
+          | 
+ 101      + _Wait_For_mSec --> 91
+ 102      + _Wireless_Write_main_ConectCode: (13)
+ 103      |    + _FLASH_Lock --> 31
+ 104      |    + _FLASH_ReadByte --> 32
+ 105      |    + _FLASH_Unlock --> 33
+ 106      |    + _I2C_8052_Write_Buf --> 2
+ 107      |    + _Save_default_Code_To_Eeprom --> 95
+ 108      |    + _Wait_For_mSec --> 91
+          | 
+       
+ 109 > _SPI_BiDirectionalLineConfig: (2)
+
+ 110 > _SPI_ClearFlag: (2)
+
+ 111 > _SPI_ClearITPendingBit: (3)
+
+ 112 > _SPI_DSP_ReadByte: (2)
+ 113      + _SPI_DSP_SendByte --> 36
+       
+ 114 > _SPI_GetCRC: (3)
+
+ 115 > _SPI_GetCRCPolynomial: (2)
+
+ 116 > _SPI_GetITStatus: (5)
+
+ 117 > _SPI_ITConfig: (5)
+
+ 118 > _SPI_NSSInternalSoftwareCmd: (2)
+
+ 119 > _SPI_ResetCRC: (2)
+ 120      + _SPI_CalculateCRCCmd: (3)
+ 121      |    + _SPI_Cmd: (2)
+          | 
+ 122      + _SPI_Cmd --> 121
+       
+ 123 > _SPI_TransmitCRC: (2)
+
+ 124 > _TIM4_GetITStatus: (3)
+
+ 125 > _UART2_ClearFlag: (4)
+
+ 126 > _UART2_GetITStatus: (6)
+
+ 127 > _UART2_IrDACmd: (2)
+
+ 128 > _UART2_IrDAConfig: (2)
+
+ 129 > _UART2_LINBreakDetectionConfig: (2)
+
+ 130 > _UART2_LINCmd: (2)
+
+ 131 > _UART2_LINConfig: (5)
+
+ 132 > _UART2_ReceiveData9: (4)
+
+ 133 > _UART2_ReceiverWakeUpCmd: (2)
+
+ 134 > _UART2_SendBreak: (2)
+
+ 135 > _UART2_SendData9: (4)
+
+ 136 > _UART2_SetAddress: (3)
+
+ 137 > _UART2_SetGuardTime: (2)
+
+ 138 > _UART2_SetPrescaler: (2)
+
+ 139 > _UART2_SmartCardCmd: (2)
+
+ 140 > _UART2_SmartCardNACKCmd: (2)
+
+ 141 > _UART2_WakeUpConfig: (2)
+
+ 142 > _Wireless_i2c_Addr: (2)
+
+ 143 > __stext: (0)
+
+ 144 > _info_FCC_mode: (10)
+ 145      + _I2C_8052_Write_Buf --> 2
+       
+ 146 > _info_Stereo_Wireless_Rx_OFF: (10)
+ 147      + _I2C_8052_Write_Buf --> 2
+ 148      + _Wait_For_mSec --> 91
+       
+ 149 > _info_Stereo_Wireless_Rx_mute_OFF: (11)
+ 150      + _I2C_8052_Write_Buf --> 2
+ 151      + _Wait_For_mSec --> 91
+       
+ 152 > _info_Wireless_Rx_BT_state: (11)
+ 153      + _I2C_8052_Write_Buf --> 2
+       
+ 154 > _main: (2)
+ 155      + _MCU_init: (2)
+ 156      |    + _CLOCK_Init: (2)
+ 157      |    |    + _CLK_CCOCmd: (2)
+ 158      |    |    + _CLK_CCOConfig: (3)
+ 159      |    |    + _CLK_ClockSwitchConfig: (10)
+ 160      |    |    + _CLK_DeInit: (2)
+ 161      |    |    + _CLK_GetSYSCLKSource: (2)
+ 162      |    |    + _CLK_HSECmd: (2)
+ 163      |    |    + _CLK_SYSCLKConfig: (3)
+ 164      |    |    + _WaitForHSEStartUp: (4)
+ 165      |    |    |    + _CLK_GetFlagStatus: (7)
+          |    |    | 
+          |    | 
+ 166      |    + _GPIO_ReadInputPin --> 7
+ 167      |    + _GPIO_WriteHigh --> 13
+ 168      |    + _GPIO_WriteLow --> 88
+ 169      |    + _Init_ADC9: (2)
+ 170      |    |    + _ADC1_Init: (10)
+ 171      |    |    |    + _ADC1_ConversionConfig: (5)
+ 172      |    |    |    + _ADC1_ExternalTriggerConfig: (4)
+ 173      |    |    |    + _ADC1_PrescalerConfig: (3)
+ 174      |    |    |    + _ADC1_SchmittTriggerConfig: (4)
+          |    |    | 
+ 175      |    |    + _ADC1_StartConversion: (2)
+          |    | 
+ 176      |    + _Init_Config_IO: (2)
+ 177      |    |    + _GPIO_Init --> 85
+          |    | 
+ 178      |    + _SPI_DSP_Init: (2)
+ 179      |    |    + _SPI_Cmd --> 121
+ 180      |    |    + _SPI_DeInit: (2)
+ 181      |    |    + _SPI_Init: (10)
+          |    | 
+ 182      |    + _System_Init: (3)
+ 183      |    |    + _Battery_Status_Detect: (2)
+ 184      |    |    |    + _GPIO_ReadInputPin --> 7
+ 185      |    |    |    + _GPIO_WriteHigh --> 13
+ 186      |    |    |    + _GPIO_WriteLow --> 88
+          |    |    | 
+ 187      |    |    + _Get_Battery_Status: (2)
+ 188      |    |    |    + _ADC1_ClearFlag: (2)
+ 189      |    |    |    + _ADC1_GetConversionValue: (7)
+ 190      |    |    |    + _ADC1_GetFlagStatus: (2)
+ 191      |    |    |    + _Init_ADC9 --> 169
+ 192      |    |    |    + _Voltage_Detect: (5)
+ 193      |    |    |    |    + _Calculate_Voltage: (9)
+          |    |    |    | 
+          |    |    | 
+ 194      |    |    + _Get_Battery_temper_Status: (2)
+ 195      |    |    |    + _ADC1_ClearFlag --> 188
+ 196      |    |    |    + _ADC1_GetConversionValue --> 189
+ 197      |    |    |    + _ADC1_GetFlagStatus --> 190
+ 198      |    |    |    + _Init_ADC1: (2)
+ 199      |    |    |    |    + _ADC1_Init --> 170
+ 200      |    |    |    |    + _ADC1_StartConversion --> 175
+          |    |    |    | 
+          |    |    | 
+ 201      |    |    + _Wait_For_mSec --> 91
+          |    | 
+ 202      |    + _TIM4_Config_1MS: (2)
+ 203      |    |    + _TIM4_Cmd: (2)
+ 204      |    |    + _TIM4_DeInit: (2)
+ 205      |    |    + _TIM4_ITConfig: (4)
+ 206      |    |    + _TIM4_TimeBaseInit: (2)
+          |    | 
+ 207      |    + _UART2_DeInit: (3)
+ 208      |    + _Wait_For_mSec --> 91
+ 209      |    + _initUart: (2)
+ 210      |    |    + _UART2_Cmd: (2)
+ 211      |    |    + _UART2_ITConfig: (7)
+ 212      |    |    + _UART2_Init: (25)
+ 213      |    |    |    + _CLK_GetClockFreq: (11)
+          |    |    | 
+          |    | 
+ 214      |    + _vAPP_Akm7719_Dsp_Init: (2)
+ 215      |    |    + _Dsp_WriteData: (9)
+ 216      |    |    |    + _GPIO_WriteHigh --> 13
+ 217      |    |    |    + _GPIO_WriteLow --> 88
+ 218      |    |    |    + _SPI_DSP_SendByte --> 36
+          |    |    | 
+ 219      |    |    + _GPIO_WriteHigh --> 13
+ 220      |    |    + _GPIO_WriteLow --> 88
+ 221      |    |    + _SPI_DSP_SendByte --> 36
+ 222      |    |    + _Wait_For_mSec --> 91
+ 223      |    |    + _vHAL_Akm7719_control_reg_init: (3)
+ 224      |    |    |    + _Wait_For_mSec --> 91
+ 225      |    |    |    + _uHAL_Akm7719_SPI_Write: (4)
+ 226      |    |    |    |    + _GPIO_WriteHigh --> 13
+ 227      |    |    |    |    + _GPIO_WriteLow --> 88
+ 228      |    |    |    |    + _SPI_DSP_SendByte --> 36
+          |    |    |    | 
+          |    |    | 
+          |    | 
+          | 
+ 229      + _System_Main_Loop: (2)
+ 230      |    + _Charge_Manager_Loop: (2)
+ 231      |    |    + _Battery_Charge_Status: (3)
+ 232      |    |    |    + _GPIO_ReadInputPin --> 7
+ 233      |    |    |    + _GPIO_WriteLow --> 88
+ 234      |    |    |    + _Get_Battery_Status --> 187
+ 235      |    |    |    + _Get_Battery_temper_Status --> 194
+ 236      |    |    |    + _Wait_For_mSec --> 91
+          |    |    | 
+ 237      |    |    + _Battery_Status_Detect --> 183
+ 238      |    |    + _GPIO_WriteLow --> 88
+ 239      |    |    + _Get_Battery_Status --> 187
+ 240      |    |    + _Get_Battery_temper_Status --> 194
+          |    | 
+ 241      |    + _Key_Service: (3)
+ 242      |    |    + _GPIO_ReadInputPin --> 7
+ 243      |    |    + _GPIO_WriteHigh --> 13
+ 244      |    |    + _GPIO_WriteLow --> 88
+ 245      |    |    + _Wireless_Goto_Pairing: (10)
+ 246      |    |    |    + _I2C_8052_Write_Buf --> 2
+ 247      |    |    |    + _Wait_For_mSec --> 91
+          |    |    | 
+          |    | 
+ 248      |    + _Led_Display_Loop: (2)
+ 249      |    |    + _Wireless_Display_Test_Mode: (2)
+ 250      |    |    |    + _System_PowerOff --> 89
+          |    |    | 
+ 251      |    |    + _vLed_Disp_BatteryCharge: (2)
+ 252      |    |    + _vLed_Disp_BatteryCharge_TimeOut: (2)
+ 253      |    |    + _vLed_Disp_BatteryEmpty: (2)
+ 254      |    |    + _vLed_Disp_BatteryLow: (2)
+ 255      |    |    + _vLed_Disp_Charge_Full: (2)
+ 256      |    |    + _vLed_Disp_DisConnect: (2)
+ 257      |    |    + _vLed_Disp_Docked: (2)
+ 258      |    |    + _vLed_Disp_Docking: (2)
+ 259      |    |    + _vLed_Disp_Parring: (2)
+ 260      |    |    + _vLed_Disp_Separate: (2)
+ 261      |    |    + _vLed_Disp_Standby: (2)
+ 262      |    |    + _vLed_Disp_USB_BatteryCharge: (2)
+ 263      |    |    + _vLed_Disp_UnDocking: (2)
+ 264      |    |    + _vLed_Disp_UnDocking_BatteryLow: (2)
+ 265      |    |    + _vLed_Disp_pre_Separate: (2)
+          |    | 
+ 266      |    + _Wireless_Reset: (2)
+ 267      |    |    + _GPIO_WriteHigh --> 13
+ 268      |    |    + _GPIO_WriteLow --> 88
+ 269      |    |    + _Wait_For_mSec --> 91
+          |    | 
+ 270      |    + _Wireless_RxInfoProcess: (11)
+ 271      |    |    + _FLASH_ReadByte --> 32
+ 272      |    |    + _GPIO_ReadInputPin --> 7
+ 273      |    |    + _GPIO_WriteHigh --> 13
+ 274      |    |    + _GPIO_WriteLow --> 88
+ 275      |    |    + _I2C_8052_Read_Buf: (6)
+ 276      |    |    |    + _i2c_byte_in --> 65
+ 277      |    |    |    + _i2c_byte_out --> 3
+ 278      |    |    |    + _i2c_start --> 20
+ 279      |    |    |    + _i2c_stop --> 25
+          |    |    | 
+ 280      |    |    + _I2C_8052_Write_Buf --> 2
+ 281      |    |    + _Report_Charge_Status: (11)
+ 282      |    |    |    + _I2C_8052_Write_Buf --> 2
+          |    |    | 
+ 283      |    |    + _Save_Connect_Code_To_Eeprom: (4)
+ 284      |    |    |    + _FLASH_Lock --> 31
+ 285      |    |    |    + _FLASH_ProgramByte --> 97
+ 286      |    |    |    + _FLASH_SetProgrammingTime --> 98
+ 287      |    |    |    + _FLASH_Unlock --> 33
+ 288      |    |    |    + _Wait_For_mSec --> 91
+          |    |    | 
+ 289      |    |    + _Tx_Info: (5)
+ 290      |    |    |    + _myputc: (4)
+ 291      |    |    |    |    + _UART2_GetFlagStatus: (5)
+ 292      |    |    |    |    + _UART2_SendData8: (2)
+          |    |    |    | 
+ 293      |    |    |    + _myputstr: (5)
+ 294      |    |    |    |    + _myputc --> 290
+          |    |    |    | 
+          |    |    | 
+ 295      |    |    + _UART2_DeInit --> 207
+ 296      |    |    + _Wireless_Write_main_ConectCode --> 102
+ 297      |    |    + _initUart --> 209
+          |    | 
+ 298      |    + _Wireless_State_Process: (2)
+ 299      |    |    + _Link_MainUnit_State_Process: (2)
+ 300      |    |    |    + _GPIO_WriteHigh --> 13
+          |    |    | 
+          |    | 
+ 301      |    + _system_1s_Timer: (2)
+ 302      |    |    + _GPIO_ReadInputPin --> 7
+ 303      |    |    + _GPIO_WriteHigh --> 13
+ 304      |    |    + _GPIO_WriteLow --> 88
+ 305      |    |    + _Power_onoff_board --> 86
+ 306      |    |    + _Report_Charge_Status --> 281
+ 307      |    |    + _System_PowerOff --> 89
+ 308      |    |    + _clear_rx_buffuer: (10)
+ 309      |    |    |    + _I2C_8052_Write_Buf --> 2
+          |    |    | 
+ 310      |    |    + _vLed_Display_Upg: (3)
+          |    | 
+          | 
+ 311      + _Upgrade_Loop: (2)
+ 312      |    + _Is_Connect_Code: (2)
+ 313      |    + _MCU_Upgrade: (2)
+ 314      |    |    + _FLASH_Lock --> 31
+ 315      |    |    + _FLASH_ProgramByte --> 97
+ 316      |    |    + _FLASH_SetProgrammingTime --> 98
+ 317      |    |    + _FLASH_Unlock --> 33
+ 318      |    |    + _UART2_Cmd --> 210
+ 319      |    |    + _WWDG_SWReset: (2)
+ 320      |    |    + _Wireless_Reset --> 266
+          |    | 
+ 321      |    + _Send_Surr_Info: (2)
+ 322      |    |    + _Ask_Wireless_Rx_Version: (10)
+ 323      |    |    |    + _I2C_8052_Write_Buf --> 2
+          |    |    | 
+ 324      |    |    + _HexGroupToString: (12)
+ 325      |    |    |    + _HexToASCII: (3)
+          |    |    | 
+ 326      |    |    + _Tx_Info --> 289
+ 327      |    |    + _UART2_DeInit --> 207
+ 328      |    |    + _Wait_For_mSec --> 91
+ 329      |    |    + _initUart --> 209
+ 330      |    |    + _myputc --> 290
+ 331      |    |    + _myputstr --> 293
+          |    | 
+ 332      |    + _Upg_Device: (2)
+ 333      |    + _Wireless_Enter_Upgrade: (2)
+ 334      |    |    + _UART2_DeInit --> 207
+ 335      |    |    + _Wireless_Upg_Init: (11)
+ 336      |    |    |    + _I2C_Write_Buf2: (8)
+ 337      |    |    |    |    + _I2C_Write_Buf_W: (9)
+ 338      |    |    |    |    |    + _Wireless_IIC_delay --> 8
+ 339      |    |    |    |    |    + _i2c_byte_out --> 3
+ 340      |    |    |    |    |    + _i2c_start --> 20
+ 341      |    |    |    |    |    + _i2c_stop --> 25
+          |    |    |    |    | 
+          |    |    |    | 
+ 342      |    |    |    + _I2C_Write_Byte2: (5)
+ 343      |    |    |    |    + _I2C_Write_Buf2 --> 336
+          |    |    |    | 
+ 344      |    |    |    + _PassThrough_Sector_Erase: (9)
+ 345      |    |    |    |    + _I2C_Write_Buf2 --> 336
+ 346      |    |    |    |    + _I2C_Write_Byte2 --> 342
+ 347      |    |    |    |    + _Waitfor_GPCS41_ADDR: (3)
+ 348      |    |    |    |    |    + _I2C_Read_Buf2: (6)
+ 349      |    |    |    |    |    |    + _I2C_Read_Buf_W: (6)
+ 350      |    |    |    |    |    |    |    + _I2C_Write_Buf_W --> 337
+ 351      |    |    |    |    |    |    |    + _Wireless_IIC_delay --> 8
+ 352      |    |    |    |    |    |    |    + _Wireless_SCL --> 9
+ 353      |    |    |    |    |    |    |    + _Wireless_SDA --> 10
+ 354      |    |    |    |    |    |    |    + _i2c_recv_W: (5)
+ 355      |    |    |    |    |    |    |    |    + _i2c_byte_in --> 65
+ 356      |    |    |    |    |    |    |    |    + _i2c_byte_out --> 3
+ 357      |    |    |    |    |    |    |    |    + _i2c_start --> 20
+ 358      |    |    |    |    |    |    |    |    + _i2c_stop --> 25
+          |    |    |    |    |    |    |    | 
+ 359      |    |    |    |    |    |    |    + _i2c_stop --> 25
+          |    |    |    |    |    |    | 
+          |    |    |    |    |    | 
+ 360      |    |    |    |    |    + _Wait_For_mSec --> 91
+          |    |    |    |    | 
+          |    |    |    | 
+ 361      |    |    |    + _Save_default_Code_To_Eeprom --> 95
+ 362      |    |    |    + _Updata_Start: (2)
+ 363      |    |    |    |    + _myputc --> 290
+          |    |    |    | 
+ 364      |    |    |    + _Wait_For_mSec --> 91
+ 365      |    |    |    + _Waitfor_ISDLC_ADDR: (5)
+ 366      |    |    |    |    + _I2C_Read_Buf2 --> 348
+ 367      |    |    |    |    + _Wait_For_mSec --> 91
+          |    |    |    | 
+ 368      |    |    |    + _Wireless_Reset --> 266
+ 369      |    |    |    + _vLed_Display_Erase: (3)
+          |    |    | 
+ 370      |    |    + _initUart --> 209
+ 371      |    |    + _vClear_RxBuff: (3)
+          |    | 
+ 372      |    + _Wireless_Write_ConectCode: (11)
+ 373      |    |    + _Connect_Code_Compare: (4)
+ 374      |    |    |    + _FLASH_ReadByte --> 32
+          |    |    | 
+ 375      |    |    + _GPIO_WriteHigh --> 13
+ 376      |    |    + _GPIO_WriteLow --> 88
+ 377      |    |    + _I2C_8052_Write_Buf --> 2
+ 378      |    |    + _Save_Connect_Code_To_Eeprom --> 283
+          |    | 
+          | 
+       
+ 379 > _uHAL_Akm7719_SPI_Write_VOL: (7)
+ 380      + _GPIO_WriteHigh --> 13
+ 381      + _GPIO_WriteLow --> 88
+ 382      + _SPI_DSP_SendByte --> 36
+ 383      + _Wait_For_mSec --> 91
+       
+ 384 > _vLed_Disp_Docking_BatteryLow: (2)
+
+ 385 > _vLed_Disp_Sod_Stereo: (2)
+
+ 386 > f_ADC1_IRQHandler: (5)
+
+ 387 > f_AWU_IRQHandler: (5)
+
+ 388 > f_CLK_IRQHandler: (5)
+
+ 389 > f_EEPROM_EEC_IRQHandler: (5)
+
+ 390 > f_EXTI_PORTA_IRQHandler: (5)
+
+ 391 > f_EXTI_PORTB_IRQHandler: (5)
+
+ 392 > f_EXTI_PORTC_IRQHandler: (5)
+
+ 393 > f_EXTI_PORTD_IRQHandler: (5)
+
+ 394 > f_EXTI_PORTE_IRQHandler: (5)
+
+ 395 > f_I2C_IRQHandler: (5)
+
+ 396 > f_NonHandledInterrupt: (5)
+
+ 397 > f_SPI_IRQHandler: (5)
+
+ 398 > f_TIM1_CAP_COM_IRQHandler: (5)
+
+ 399 > f_TIM1_UPD_OVF_TRG_BRK_IRQHandler: (5)
+
+ 400 > f_TIM2_CAP_COM_IRQHandler: (5)
+
+ 401 > f_TIM2_UPD_OVF_BRK_IRQHandler: (5)
+
+ 402 > f_TIM3_CAP_COM_IRQHandler: (5)
+
+ 403 > f_TIM3_UPD_OVF_BRK_IRQHandler: (5)
+
+ 404 > f_TIM4_UPD_OVF_IRQHandler: (11)
+ 405      + _TIM4_ClearITPendingBit: (2)
+ 406      + _system_1Ms_Timer: (2)
+ 407      |    + _GPIO_ReadInputPin --> 7
+ 408      |    + _Key_Scan: (3)
+ 409      |    |    + _Key_Value: (3)
+ 410      |    |    |    + _GPIO_ReadInputPin --> 7
+          |    |    | 
+          |    | 
+          | 
+ 411      + _vLedTick_10Ms: (2)
+ 412      + _vLed_Light_Process: (3)
+ 413      |    + _GPIO_WriteHigh --> 13
+ 414      |    + _GPIO_WriteLow --> 88
+          | 
+       
+ 415 > f_TLI_IRQHandler: (5)
+
+ 416 > f_TRAP_IRQHandler: (5)
+
+ 417 > f_UART2_RX_IRQHandler: (13)
+ 418      + _UART2_ClearITPendingBit: (4)
+ 419      + _UART2_ReceiveData8: (2)
+ 420      + _Upgrade_RxData_Process: (3)
+ 421      |    + _GPIO_Init --> 85
+ 422      |    + _UART2_DeInit --> 207
+ 423      |    + _Wireless_Reset --> 266
+ 424      |    + _Wireless_Tx_Upgrade: (4)
+ 425      |    |    + _PassThrough_Write: (15)
+ 426      |    |    |    + _I2C_Write_Buf2 --> 336
+ 427      |    |    |    + _I2C_Write_Byte2 --> 342
+ 428      |    |    |    + _Waitfor_GPCS41_ADDR --> 347
+          |    |    | 
+          |    | 
+ 429      |    + _initUart --> 209
+ 430      |    + _myputc --> 290
+ 431      |    + _vLed_Display_Upg --> 310
+ 432      |    + _vRxData_Start: (2)
+ 433      |    + _vUpg_Over: (2)
+          | 
+       
+ 434 > f_UART2_TX_IRQHandler: (5)
+
+ 435   _ADC1_ClearFlag --> 188
+
+ 436   _ADC1_ConversionConfig --> 171
+
+ 437   _ADC1_ExternalTriggerConfig --> 172
+
+ 438   _ADC1_GetConversionValue --> 189
+
+ 439   _ADC1_GetFlagStatus --> 190
+
+ 440   _ADC1_Init --> 170
+
+ 441   _ADC1_PrescalerConfig --> 173
+
+ 442   _ADC1_SchmittTriggerConfig --> 174
+
+ 443   _ADC1_StartConversion --> 175
+
+ 444   _Ask_Wireless_Rx_Version --> 322
+
+ 445   _Battery_Charge_Status --> 231
+
+ 446   _Battery_Status_Detect --> 183
+
+ 447   _CLK_CCOCmd --> 157
+
+ 448   _CLK_CCOConfig --> 158
+
+ 449   _CLK_ClockSwitchConfig --> 159
+
+ 450   _CLK_DeInit --> 160
+
+ 451   _CLK_GetClockFreq --> 213
+
+ 452   _CLK_GetFlagStatus --> 165
+
+ 453   _CLK_GetSYSCLKSource --> 161
+
+ 454   _CLK_HSECmd --> 162
+
+ 455   _CLK_SYSCLKConfig --> 163
+
+ 456   _CLOCK_Init --> 156
+
+ 457   _Calculate_Voltage --> 193
+
+ 458   _Charge_Manager_Loop --> 230
+
+ 459   _Connect_Code_Compare --> 373
+
+ 460   _Dsp_WriteData --> 215
+
+ 461   _FLASH_Lock --> 31
+
+ 462   _FLASH_ProgramByte --> 97
+
+ 463   _FLASH_ReadByte --> 32
+
+ 464   _FLASH_SetProgrammingTime --> 98
+
+ 465   _FLASH_Unlock --> 33
+
+ 466   _FLASH_WaitForLastOperation --> 43
+
+ 467   _GPIO_Init --> 85
+
+ 468   _GPIO_ReadInputPin --> 7
+
+ 469   _GPIO_WriteHigh --> 13
+
+ 470   _GPIO_WriteLow --> 88
+
+ 471   _Get_Battery_Status --> 187
+
+ 472   _Get_Battery_temper_Status --> 194
+
+ 473   _HexGroupToString --> 324
+
+ 474   _HexToASCII --> 325
+
+ 475   _I2C_8052_Read_Buf --> 275
+
+ 476   _I2C_8052_Write_Buf --> 2
+
+ 477   _I2C_Read_Buf --> 56
+
+ 478   _I2C_Read_Buf2 --> 348
+
+ 479   _I2C_Read_Buf_W --> 349
+
+ 480   _I2C_Write_Buf --> 57
+
+ 481   _I2C_Write_Buf2 --> 336
+
+ 482   _I2C_Write_Buf_W --> 337
+
+ 483   _I2C_Write_Byte2 --> 342
+
+ 484   _Init_ADC1 --> 198
+
+ 485   _Init_ADC9 --> 169
+
+ 486   _Init_Config_IO --> 176
+
+ 487   _Is_Connect_Code --> 312
+
+ 488   _Key_Scan --> 408
+
+ 489   _Key_Service --> 241
+
+ 490   _Key_Value --> 409
+
+ 491   _Led_Display_Loop --> 248
+
+ 492   _Link_MainUnit_State_Process --> 299
+
+ 493   _MCU_Upgrade --> 313
+
+ 494   _MCU_init --> 155
+
+ 495   _PassThrough_Sector_Erase --> 344
+
+ 496   _PassThrough_Write --> 425
+
+ 497   _Power_onoff_board --> 86
+
+ 498   _Report_Charge_Status --> 281
+
+ 499   _SDA_IN --> 5
+
+ 500   _SDA_OUT --> 15
+
+ 501   _SPI_CalculateCRCCmd --> 120
+
+ 502   _SPI_Cmd --> 121
+
+ 503   _SPI_DSP_Init --> 178
+
+ 504   _SPI_DSP_SendByte --> 36
+
+ 505   _SPI_DeInit --> 180
+
+ 506   _SPI_GetFlagStatus --> 37
+
+ 507   _SPI_Init --> 181
+
+ 508   _SPI_ReceiveData --> 38
+
+ 509   _SPI_SendData --> 39
+
+ 510   _Save_Connect_Code_To_Eeprom --> 283
+
+ 511   _Save_default_Code_To_Eeprom --> 95
+
+ 512   _Send_Surr_Info --> 321
+
+ 513   _System_Init --> 182
+
+ 514   _System_Main_Loop --> 229
+
+ 515   _System_PowerOff --> 89
+
+ 516   _TIM4_ClearITPendingBit --> 405
+
+ 517   _TIM4_Cmd --> 203
+
+ 518   _TIM4_Config_1MS --> 202
+
+ 519   _TIM4_DeInit --> 204
+
+ 520   _TIM4_ITConfig --> 205
+
+ 521   _TIM4_TimeBaseInit --> 206
+
+ 522   _Tx_Info --> 289
+
+ 523   _UART2_ClearITPendingBit --> 418
+
+ 524   _UART2_Cmd --> 210
+
+ 525   _UART2_DeInit --> 207
+
+ 526   _UART2_GetFlagStatus --> 291
+
+ 527   _UART2_ITConfig --> 211
+
+ 528   _UART2_Init --> 212
+
+ 529   _UART2_ReceiveData8 --> 419
+
+ 530   _UART2_SendData8 --> 292
+
+ 531   _Updata_Start --> 362
+
+ 532   _Upg_Device --> 332
+
+ 533   _Upgrade_Loop --> 311
+
+ 534   _Upgrade_RxData_Process --> 420
+
+ 535   _Voltage_Detect --> 192
+
+ 536   _WWDG_SWReset --> 319
+
+ 537   _WaitForHSEStartUp --> 164
+
+ 538   _Wait_For_mSec --> 91
+
+ 539   _Waitfor_GPCS41_ADDR --> 347
+
+ 540   _Waitfor_ISDLC_ADDR --> 365
+
+ 541   _Wireless_Display_Test_Mode --> 249
+
+ 542   _Wireless_Enter_Upgrade --> 333
+
+ 543   _Wireless_Goto_Pairing --> 245
+
+ 544   _Wireless_IIC_delay --> 8
+
+ 545   _Wireless_Reset --> 266
+
+ 546   _Wireless_RxInfoProcess --> 270
+
+ 547   _Wireless_SCL --> 9
+
+ 548   _Wireless_SDA --> 10
+
+ 549   _Wireless_SDA_statu --> 6
+
+ 550   _Wireless_State_Process --> 298
+
+ 551   _Wireless_Tx_Upgrade --> 424
+
+ 552   _Wireless_Upg_Init --> 335
+
+ 553   _Wireless_Write_ConectCode --> 372
+
+ 554   _Wireless_Write_SOD_ConectCode --> 30
+
+ 555   _Wireless_Write_main_ConectCode --> 102
+
+ 556   _clear_rx_buffuer --> 308
+
+ 557   _i2c_bit_in --> 67
+
+ 558   _i2c_bit_in_ACK --> 4
+
+ 559   _i2c_bit_out --> 14
+
+ 560   _i2c_byte_in --> 65
+
+ 561   _i2c_byte_out --> 3
+
+ 562   _i2c_recv --> 64
+
+ 563   _i2c_recv_W --> 354
+
+ 564   _i2c_start --> 20
+
+ 565   _i2c_stop --> 25
+
+ 566   _info_Tx_Wireless_Sod_BT_mode --> 92
+
+ 567   _initUart --> 209
+
+ 568   _myputc --> 290
+
+ 569   _myputstr --> 293
+
+ 570   _system_1Ms_Timer --> 406
+
+ 571   _system_1s_Timer --> 301
+
+ 572   _uHAL_Akm7719_SPI_Write --> 225
+
+ 573   _vAPP_Akm7719_Dsp_Init --> 214
+
+ 574   _vCheck_SCL_Status --> 11
+
+ 575   _vClear_RxBuff --> 371
+
+ 576   _vHAL_Akm7719_control_reg_init --> 223
+
+ 577   _vLedTick_10Ms --> 411
+
+ 578   _vLed_Disp_BatteryCharge --> 251
+
+ 579   _vLed_Disp_BatteryCharge_TimeOut --> 252
+
+ 580   _vLed_Disp_BatteryEmpty --> 253
+
+ 581   _vLed_Disp_BatteryLow --> 254
+
+ 582   _vLed_Disp_Charge_Full --> 255
+
+ 583   _vLed_Disp_DisConnect --> 256
+
+ 584   _vLed_Disp_Docked --> 257
+
+ 585   _vLed_Disp_Docking --> 258
+
+ 586   _vLed_Disp_Parring --> 259
+
+ 587   _vLed_Disp_Separate --> 260
+
+ 588   _vLed_Disp_Standby --> 261
+
+ 589   _vLed_Disp_USB_BatteryCharge --> 262
+
+ 590   _vLed_Disp_UnDocking --> 263
+
+ 591   _vLed_Disp_UnDocking_BatteryLow --> 264
+
+ 592   _vLed_Disp_pre_Separate --> 265
+
+ 593   _vLed_Display_Erase --> 369
+
+ 594   _vLed_Display_Upg --> 310
+
+ 595   _vLed_Light_Process --> 412
+
+ 596   _vRxData_Start --> 432
+
+ 597   _vUpg_Over --> 433
+
+
+
+                               -------
+                               Symbols
+                               -------
+
+_ADC1_ClearFlag                     0000a7e1   defined in Debug\stm8s_adc1.o section .text
+                                               used in Debug\charge.o
+_ADC1_ConversionConfig              0000a756   defined in Debug\stm8s_adc1.o section .text
+_ADC1_ExternalTriggerConfig         0000a783   defined in Debug\stm8s_adc1.o section .text
+_ADC1_GetConversionValue            0000a7a9   defined in Debug\stm8s_adc1.o section .text
+                                               used in Debug\charge.o
+_ADC1_GetFlagStatus                 0000a7db   defined in Debug\stm8s_adc1.o section .text
+                                               used in Debug\charge.o
+_ADC1_Init                          0000a6a3   defined in Debug\stm8s_adc1.o section .text
+                                               used in Debug\main.o
+_ADC1_PrescalerConfig               0000a6c9   defined in Debug\stm8s_adc1.o section .text
+_ADC1_SchmittTriggerConfig          0000a6dc   defined in Debug\stm8s_adc1.o section .text
+_ADC1_StartConversion               0000a7a4   defined in Debug\stm8s_adc1.o section .text
+                                               used in Debug\main.o
+_Ask_Wireless_Rx_Version            0000be30   defined in Debug\wireless_func.o section .text
+_BT_R_nfc_disable_flag              00000105   defined in Debug\key.o section .data, initialized
+_Battery_Charge_Status              0000a4c1   defined in Debug\charge.o section .text
+_Battery_Status_Detect              0000a547   defined in Debug\charge.o section .text
+                                               used in Debug\main.o
+_CLKPrescTable                      000090f2   defined in Debug\stm8s_clk.o section .const
+_CLK_CCOCmd                         0000a8f8   defined in Debug\stm8s_clk.o section .text
+                                               used in Debug\main.o
+_CLK_CCOConfig                      0000a905   defined in Debug\stm8s_clk.o section .text
+                                               used in Debug\main.o
+_CLK_ClockSwitchConfig              0000a920   defined in Debug\stm8s_clk.o section .text
+                                               used in Debug\main.o
+_CLK_DeInit                         0000a7e6   defined in Debug\stm8s_clk.o section .text
+                                               used in Debug\main.o
+_CLK_GetClockFreq                   0000a82d   defined in Debug\stm8s_clk.o section .text
+                                               used in Debug\stm8s_uart2.o
+_CLK_GetFlagStatus                  0000a8b5   defined in Debug\stm8s_clk.o section .text
+                                               used in Debug\main.o
+_CLK_GetSYSCLKSource                0000a91c   defined in Debug\stm8s_clk.o section .text
+                                               used in Debug\main.o
+_CLK_HSECmd                         0000a820   defined in Debug\stm8s_clk.o section .text
+                                               used in Debug\main.o
+_CLK_SYSCLKConfig                   0000a88e   defined in Debug\stm8s_clk.o section .text
+                                               used in Debug\main.o
+_CLOCK_Init                         0000b2f2   defined in Debug\main.o section .text
+_Calculate_Voltage                  0000a3f7   defined in Debug\charge.o section .text
+_Change_to_Strereo_mode             0000be18   defined in Debug\wireless_func.o section .text
+_Charge_Manager_Loop                0000a62d   defined in Debug\charge.o section .text
+                                               used in Debug\main.o
+_Connect_Code_Compare               0000bf79   defined in Debug\wireless_func.o section .text
+_DEVICE_ID                          ********   *** removed from Debug\bt830.o ***
+_Dsp_Send_N_FF                      00009dc3   defined in Debug\tas5711.o section .text
+_Dsp_WriteData                      00009e45   defined in Debug\tas5711.o section .text
+_Dsp_Write_buf                      00009dd8   defined in Debug\tas5711.o section .text
+_FLASH_EraseOptionByte              0000aa5d   defined in Debug\stm8s_flash.o section .text
+_FLASH_GetBootSize                  0000aaca   defined in Debug\stm8s_flash.o section .text
+_FLASH_GetFlagStatus                0000aaf8   defined in Debug\stm8s_flash.o section .text
+_FLASH_GetLowPowerMode              0000aabe   defined in Debug\stm8s_flash.o section .text
+_FLASH_GetProgrammingTime           0000aac4   defined in Debug\stm8s_flash.o section .text
+_FLASH_Lock                         0000a9be   defined in Debug\stm8s_flash.o section .text
+                                               used in Debug\uart.o
+                                                       Debug\wireless_func.o
+_FLASH_ProgramByte                  0000a9cb   defined in Debug\stm8s_flash.o section .text
+                                               used in Debug\uart.o
+                                                       Debug\wireless_func.o
+_FLASH_ProgramOptionByte            0000aa3d   defined in Debug\stm8s_flash.o section .text
+_FLASH_ProgramWord                  0000a9e9   defined in Debug\stm8s_flash.o section .text
+_FLASH_ReadByte                     0000a9dc   defined in Debug\stm8s_flash.o section .text
+                                               used in Debug\wireless_func.o
+_FLASH_ReadOptionByte               0000aa78   defined in Debug\stm8s_flash.o section .text
+_FLASH_SetLowPowerMode              0000aaa0   defined in Debug\stm8s_flash.o section .text
+_FLASH_SetProgrammingTime           0000aab3   defined in Debug\stm8s_flash.o section .text
+                                               used in Debug\uart.o
+                                                       Debug\wireless_func.o
+_FLASH_Unlock                       0000a9a9   defined in Debug\stm8s_flash.o section .text
+                                               used in Debug\uart.o
+                                                       Debug\wireless_func.o
+_FLASH_WaitForLastOperation         0000ab03   defined in Debug\stm8s_flash.o section .text
+_Flash_ChipErase                    ********   *** removed from Debug\bt830.o ***
+_Flash_status_buf                   ********   *** removed from Debug\bt830.o ***
+_GPIO_Init                          0000ab40   defined in Debug\stm8s_gpio.o section .text
+                                               used in Debug\key.o Debug\main.o
+                                                       Debug\uart.o
+_GPIO_ReadInputPin                  0000aba4   defined in Debug\stm8s_gpio.o section .text
+                                               used in Debug\key.o Debug\charge.o
+                                                       Debug\i2c.o Debug\main.o
+                                                       Debug\wireless_func.o
+_GPIO_ReadOutputPin                 0000abab   defined in Debug\stm8s_gpio.o section .text
+_GPIO_WriteHigh                     0000ab8e   defined in Debug\stm8s_gpio.o section .text
+                                               used in Debug\bt830.o Debug\key.o
+                                                       Debug\tas5711.o
+                                                       Debug\charge.o Debug\i2c.o
+                                                       Debug\led.o Debug\main.o
+                                                       Debug\upg.o
+                                                       Debug\wireless_func.o
+_GPIO_WriteLow                      0000ab95   defined in Debug\stm8s_gpio.o section .text
+                                               used in Debug\bt830.o Debug\key.o
+                                                       Debug\tas5711.o
+                                                       Debug\charge.o Debug\led.o
+                                                       Debug\main.o Debug\upg.o
+                                                       Debug\wireless_func.o
+_GPIO_WriteReverse                  0000ab9d   defined in Debug\stm8s_gpio.o section .text
+_Get_Battery_Status                 0000a5ff   defined in Debug\charge.o section .text
+                                               used in Debug\main.o
+_Get_Battery_temper_Status          0000a617   defined in Debug\charge.o section .text
+                                               used in Debug\main.o
+_HSIDivFactor                       000090ee   defined in Debug\stm8s_clk.o section .const
+_HexGroupToString                   0000c1e7   defined in Debug\wireless_func.o section .text
+_HexToASCII                         0000c1d5   defined in Debug\wireless_func.o section .text
+_I2C_8052_Read_Buf                  0000ade0   defined in Debug\i2c.o section .text
+                                               used in Debug\wireless_func.o
+_I2C_8052_Write_Buf                 0000ad9b   defined in Debug\i2c.o section .text
+                                               used in Debug\wireless_func.o
+_I2C_Read_Buf                       0000ae80   defined in Debug\i2c.o section .text
+_I2C_Read_Buf2                      0000bb53   defined in Debug\upg.o section .text
+_I2C_Read_Buf_W                     0000afdf   defined in Debug\i2c.o section .text
+                                               used in Debug\upg.o
+_I2C_Read_TAS5711                   0000af35   defined in Debug\i2c.o section .text
+_I2C_TX_Data_send_array             0000020c   defined in Debug\upg.o section .bss
+_I2C_Write_Buf                      0000aec8   defined in Debug\i2c.o section .text
+_I2C_Write_Buf2                     0000bb31   defined in Debug\upg.o section .text
+_I2C_Write_Buf_W                    0000af5e   defined in Debug\i2c.o section .text
+                                               used in Debug\upg.o
+_I2C_Write_Byte2                    0000bb41   defined in Debug\upg.o section .text
+_I2C_Write_TAS5711                  0000af23   defined in Debug\i2c.o section .text
+_I2C_Write_Tpa5050                  0000af44   defined in Debug\i2c.o section .text
+_Init_ADC1                          0000b33b   defined in Debug\main.o section .text
+                                               used in Debug\charge.o
+_Init_ADC9                          0000b322   defined in Debug\main.o section .text
+                                               used in Debug\charge.o
+_Init_Config_IO                     0000b36e   defined in Debug\main.o section .text
+_Is_Connect_Code                    0000b9d2   defined in Debug\uart.o section .text
+_Key_Scan                           00009c32   defined in Debug\key.o section .text
+                                               used in Debug\main.o
+_Key_Service                        00009cce   defined in Debug\key.o section .text
+                                               used in Debug\main.o
+_Key_Value                          00009c07   defined in Debug\key.o section .text
+_LR_Flag                            00000124   defined in Debug\main.o section .data, initialized
+                                               used in Debug\wireless_func.o
+_Led_Display_Loop                   0000b27b   defined in Debug\led.o section .text
+                                               used in Debug\main.o
+_Link_MainUnit_State_Process        0000c4a9   defined in Debug\wireless_func.o section .text
+_Link_State                         0000010d   defined in Debug\charge.o section .data, initialized
+                                               used in Debug\key.o Debug\main.o
+                                                       Debug\wireless_func.o
+_MCU_Upgrade                        0000bab5   defined in Debug\uart.o section .text
+_MCU_init                           0000b51a   defined in Debug\main.o section .text
+_Notification_PowerOff              0000bdfc   defined in Debug\wireless_func.o section .text
+_OFF_USB_CHARGE_FLG                 0000013f   defined in Debug\main.o section .data, initialized
+                                               used in Debug\charge.o
+_PassThrough_Sector_Erase           0000bbcf   defined in Debug\upg.o section .text
+_PassThrough_Write                  0000bbfa   defined in Debug\upg.o section .text
+_Power_Off_direct                   00009be8   defined in Debug\key.o section .text
+_Power_onoff_board                  00009bd1   defined in Debug\key.o section .text
+                                               used in Debug\main.o
+_Pre_Wireless_State                 00000127   defined in Debug\main.o section .data, initialized
+_RX_Data_recv_array                 00000169   defined in Debug\i2c.o section .bss
+                                               used in Debug\upg.o
+                                                       Debug\wireless_func.o
+_RX_disconnect_time                 00000126   defined in Debug\main.o section .data, initialized
+_ReadDeviceID                       ********   *** removed from Debug\bt830.o ***
+_Report_Charge_Status               0000c47b   defined in Debug\wireless_func.o section .text
+                                               used in Debug\main.o
+_Rest_Pairing_Code                  0000c5e3   defined in Debug\wireless_func.o section .text
+_SDA_IN                             0000ac70   defined in Debug\i2c.o section .text
+_SDA_OUT                            0000ac72   defined in Debug\i2c.o section .text
+_SPI_BiDirectionalLineConfig        00009b64   defined in Debug\stm8s_spi.o section .text
+_SPI_CalculateCRCCmd                00009b35   defined in Debug\stm8s_spi.o section .text
+_SPI_ClearFlag                      00009b7c   defined in Debug\stm8s_spi.o section .text
+_SPI_ClearITPendingBit              00009bbc   defined in Debug\stm8s_spi.o section .text
+_SPI_Cmd                            00009ae7   defined in Debug\stm8s_spi.o section .text
+                                               used in Debug\tas5711.o
+_SPI_DSP_Init                       00009d85   defined in Debug\tas5711.o section .text
+                                               used in Debug\main.o
+_SPI_DSP_ReadByte                   00009dbf   defined in Debug\tas5711.o section .text
+_SPI_DSP_SendByte                   00009da3   defined in Debug\tas5711.o section .text
+                                               used in Debug\bt830.o
+_SPI_DeInit                         00009aa1   defined in Debug\stm8s_spi.o section .text
+                                               used in Debug\tas5711.o
+_SPI_FLASH_BufferRead               ********   *** removed from Debug\bt830.o ***
+_SPI_FLASH_BufferWrite              ********   *** removed from Debug\bt830.o ***
+_SPI_FLASH_CS_HIGH                  ********   *** removed from Debug\bt830.o ***
+_SPI_FLASH_CS_LOW                   ********   *** removed from Debug\bt830.o ***
+_SPI_FLASH_PageWrite                ********   *** removed from Debug\bt830.o ***
+_SPI_FLASH_SectorErase              ********   *** removed from Debug\bt830.o ***
+_SPI_FLASH_SendByte                 ********   *** removed from Debug\bt830.o ***
+_SPI_FLASH_WriteEnable              ********   *** removed from Debug\bt830.o ***
+_SPI_GetCRC                         00009b49   defined in Debug\stm8s_spi.o section .text
+_SPI_GetCRCPolynomial               00009b60   defined in Debug\stm8s_spi.o section .text
+_SPI_GetFlagStatus                  00009b71   defined in Debug\stm8s_spi.o section .text
+                                               used in Debug\tas5711.o
+_SPI_GetITStatus                    00009b81   defined in Debug\stm8s_spi.o section .text
+_SPI_ITConfig                       00009af4   defined in Debug\stm8s_spi.o section .text
+_SPI_Init                           00009ab6   defined in Debug\stm8s_spi.o section .text
+                                               used in Debug\tas5711.o
+_SPI_NSSInternalSoftwareCmd         00009b23   defined in Debug\stm8s_spi.o section .text
+_SPI_ReceiveData                    00009b1f   defined in Debug\stm8s_spi.o section .text
+                                               used in Debug\tas5711.o
+_SPI_ResetCRC                       00009b58   defined in Debug\stm8s_spi.o section .text
+_SPI_SendData                       00009b1b   defined in Debug\stm8s_spi.o section .text
+                                               used in Debug\tas5711.o
+_SPI_TransmitCRC                    00009b30   defined in Debug\stm8s_spi.o section .text
+_STB_FLAG                           00000100   defined in Debug\key.o section .data, initialized
+                                               used in Debug\led.o Debug\main.o
+_Save_Connect_Code_To_Eeprom        0000bee7   defined in Debug\wireless_func.o section .text
+_Save_default_Code_To_Eeprom        0000bf36   defined in Debug\wireless_func.o section .text
+                                               used in Debug\upg.o
+_Send_Surr_Info                     0000c22a   defined in Debug\wireless_func.o section .text
+                                               used in Debug\uart.o
+_SpiDelay                           ********   *** removed from Debug\bt830.o ***
+_Spi_Flash_init                     ********   *** removed from Debug\bt830.o ***
+_System_Init                        0000b4e5   defined in Debug\main.o section .text
+_System_Main_Loop                   0000b60c   defined in Debug\main.o section .text
+_System_PowerOff                    0000bde7   defined in Debug\wireless_func.o section .text
+                                               used in Debug\key.o Debug\led.o
+                                                       Debug\main.o
+_TIM4_ClearITPendingBit             0000ac0c   defined in Debug\stm8s_tim4.o section .text
+                                               used in Debug\stm8s_it.o
+_TIM4_Cmd                           0000abd3   defined in Debug\stm8s_tim4.o section .text
+                                               used in Debug\main.o
+_TIM4_Config_1MS                    0000b354   defined in Debug\main.o section .text
+_TIM4_DeInit                        0000abb1   defined in Debug\stm8s_tim4.o section .text
+                                               used in Debug\main.o
+_TIM4_GetITStatus                   0000abf6   defined in Debug\stm8s_tim4.o section .text
+_TIM4_ITConfig                      0000abe0   defined in Debug\stm8s_tim4.o section .text
+                                               used in Debug\main.o
+_TIM4_TimeBaseInit                  0000abca   defined in Debug\stm8s_tim4.o section .text
+                                               used in Debug\main.o
+_Tpa5050                            00000113   defined in Debug\i2c.o section .data, initialized
+_Tx_Buffer                          ********   *** removed from Debug\bt830.o ***
+_Tx_Info                            0000c1a9   defined in Debug\wireless_func.o section .text
+_UART2_ClearFlag                    0000a333   defined in Debug\stm8s_uart2.o section .text
+_UART2_ClearITPendingBit            0000a3d8   defined in Debug\stm8s_uart2.o section .text
+                                               used in Debug\stm8s_it.o
+_UART2_Cmd                          0000a179   defined in Debug\stm8s_uart2.o section .text
+                                               used in Debug\uart.o
+_UART2_DeInit                       0000a02c   defined in Debug\stm8s_uart2.o section .text
+                                               used in Debug\main.o Debug\uart.o
+                                                       Debug\wireless_func.o
+_UART2_GetFlagStatus                0000a2f2   defined in Debug\stm8s_uart2.o section .text
+                                               used in Debug\uart.o
+_UART2_GetITStatus                  0000a35d   defined in Debug\stm8s_uart2.o section .text
+_UART2_ITConfig                     0000a186   defined in Debug\stm8s_uart2.o section .text
+                                               used in Debug\uart.o
+_UART2_Init                         0000a053   defined in Debug\stm8s_uart2.o section .text
+                                               used in Debug\uart.o
+_UART2_IrDACmd                      0000a211   defined in Debug\stm8s_uart2.o section .text
+_UART2_IrDAConfig                   0000a204   defined in Debug\stm8s_uart2.o section .text
+_UART2_LINBreakDetectionConfig      0000a21e   defined in Debug\stm8s_uart2.o section .text
+_UART2_LINCmd                       0000a258   defined in Debug\stm8s_uart2.o section .text
+_UART2_LINConfig                    0000a22b   defined in Debug\stm8s_uart2.o section .text
+_UART2_ReceiveData8                 0000a297   defined in Debug\stm8s_uart2.o section .text
+                                               used in Debug\stm8s_it.o
+_UART2_ReceiveData9                 0000a29b   defined in Debug\stm8s_uart2.o section .text
+_UART2_ReceiverWakeUpCmd            0000a28a   defined in Debug\stm8s_uart2.o section .text
+_UART2_SendBreak                    0000a2d2   defined in Debug\stm8s_uart2.o section .text
+_UART2_SendData8                    0000a2b7   defined in Debug\stm8s_uart2.o section .text
+                                               used in Debug\uart.o
+_UART2_SendData9                    0000a2bb   defined in Debug\stm8s_uart2.o section .text
+_UART2_SetAddress                   0000a2d7   defined in Debug\stm8s_uart2.o section .text
+_UART2_SetGuardTime                 0000a2ea   defined in Debug\stm8s_uart2.o section .text
+_UART2_SetPrescaler                 0000a2ee   defined in Debug\stm8s_uart2.o section .text
+_UART2_SmartCardCmd                 0000a265   defined in Debug\stm8s_uart2.o section .text
+_UART2_SmartCardNACKCmd             0000a272   defined in Debug\stm8s_uart2.o section .text
+_UART2_WakeUpConfig                 0000a27f   defined in Debug\stm8s_uart2.o section .text
+_Updata_Start                       0000b984   defined in Debug\uart.o section .text
+                                               used in Debug\upg.o
+_Upg_Device                         0000b994   defined in Debug\uart.o section .text
+_Upgrade_Loop                       0000bada   defined in Debug\uart.o section .text
+                                               used in Debug\main.o
+_Upgrade_RxData_Process             0000ba0d   defined in Debug\uart.o section .text
+                                               used in Debug\stm8s_it.o
+_Voltage_Detect                     0000a454   defined in Debug\charge.o section .text
+_WREN                               ********   *** removed from Debug\bt830.o ***
+_WWDG_SWReset                       0000ac11   defined in Debug\stm8s_wwdg.o section .text
+                                               used in Debug\uart.o
+_WaitForHSEStartUp                  0000b2c6   defined in Debug\main.o section .text
+_Wait_For_mSec                      0000b957   defined in Debug\uart.o section .text
+                                               used in Debug\key.o
+                                                       Debug\tas5711.o
+                                                       Debug\charge.o
+                                                       Debug\main.o Debug\upg.o
+                                                       Debug\wireless_func.o
+_Waitfor_GPCS41_ADDR                0000bb9b   defined in Debug\upg.o section .text
+_Waitfor_ISDLC_ADDR                 0000bb5f   defined in Debug\upg.o section .text
+_WirelessUpgStep                    00000148   defined in Debug\upg.o section .data, initialized
+_Wireless_Display_Test_Mode         0000b1b7   defined in Debug\led.o section .text
+_Wireless_Enter_Upgrade             0000baa7   defined in Debug\uart.o section .text
+_Wireless_Goto_Pairing              0000c5c0   defined in Debug\wireless_func.o section .text
+                                               used in Debug\key.o
+_Wireless_IIC_delay                 0000ac66   defined in Debug\i2c.o section .text
+_Wireless_Reset                     0000bb13   defined in Debug\upg.o section .text
+                                               used in Debug\main.o Debug\uart.o
+_Wireless_RxInfoProcess             0000c2ae   defined in Debug\wireless_func.o section .text
+                                               used in Debug\main.o
+_Wireless_SCL                       0000ac26   defined in Debug\i2c.o section .text
+_Wireless_SDA                       0000ac19   defined in Debug\i2c.o section .text
+_Wireless_SDA_statu                 0000ac33   defined in Debug\i2c.o section .text
+_Wireless_State                     00000149   defined in Debug\wireless_func.o section .data, initialized
+                                               used in Debug\charge.o
+                                                       Debug\main.o
+_Wireless_State_Process             0000c587   defined in Debug\wireless_func.o section .text
+                                               used in Debug\main.o
+_Wireless_Tx_Upgrade                0000bc5e   defined in Debug\upg.o section .text
+                                               used in Debug\uart.o
+_Wireless_Upg_Init                  0000bc83   defined in Debug\upg.o section .text
+                                               used in Debug\uart.o
+_Wireless_Write_ConectCode          0000bfe4   defined in Debug\wireless_func.o section .text
+                                               used in Debug\uart.o
+_Wireless_Write_SOD_ConectCode      0000c0d7   defined in Debug\wireless_func.o section .text
+_Wireless_Write_main_ConectCode     0000c136   defined in Debug\wireless_func.o section .text
+_Wireless_i2c_Addr                  0000ac16   defined in Debug\i2c.o section .text
+__endmem                            000005ff   defined in command file
+                                               *** not used ***
+__endzp                             0000000a   defined in command file section .ubsct
+                                               used in C:\Program Files\COSMIC\CXSTM8\Lib\crtsi0.sm8
+__idesc__                           00009a01   defined in linker section .init
+                                               used in C:\Program Files\COSMIC\CXSTM8\Lib\crtsi0.sm8
+__memory                            0000031a   defined in command file section .bss
+                                               used in C:\Program Files\COSMIC\CXSTM8\Lib\crtsi0.sm8
+__stack                             000007ff   defined in command file
+                                               used in C:\Program Files\COSMIC\CXSTM8\Lib\crtsi0.sm8
+__startmem                          0000031a   defined in command file section .bss
+                                               *** not used ***
+__stext                             00009a56   defined in C:\Program Files\COSMIC\CXSTM8\Lib\crtsi0.sm8 section .text
+                                               used in Debug\stm8_interrupt_vector.o
+__vectab                            00009000   defined in Debug\stm8_interrupt_vector.o section .const
+_adc_value                          00000167   defined in Debug\charge.o section .bss
+_akm_init_config_data               000090b0   defined in Debug\tas5711.o section .const
+_b_light_timer                      00000174   defined in Debug\led.o section .bss
+_b_pwm_value                        00000117   defined in Debug\led.o section .data, initialized
+                                               used in Debug\wireless_func.o
+_battery_charge                     00000108   defined in Debug\charge.o section .data, initialized
+                                               used in Debug\led.o
+                                                       Debug\wireless_func.o
+_battery_quantity                   0000010e   defined in Debug\charge.o section .data, initialized
+                                               used in Debug\led.o Debug\main.o
+                                                       Debug\wireless_func.o
+_block_num                          00000185   defined in Debug\uart.o section .bss
+_bt_do_not_reconnect_flag           00000104   defined in Debug\key.o section .data, initialized
+_charge_changeto_disconent_flag     00000140   defined in Debug\main.o section .data, initialized
+                                               used in Debug\charge.o
+                                                       Debug\wireless_func.o
+_charge_report_time                 00000138   defined in Debug\main.o section .data, initialized
+_charge_time                        0000017e   defined in Debug\main.o section .bss
+                                               used in Debug\charge.o
+_check_sum                          00000187   defined in Debug\uart.o section .bss
+_clear_rx_buffuer                   0000bebc   defined in Debug\wireless_func.o section .text
+                                               used in Debug\main.o
+_coco_buffer                        00000316   defined in Debug\wireless_func.o section .bss
+_coco_char_buffer                   0000030e   defined in Debug\wireless_func.o section .bss
+_coco_count                         00000142   defined in Debug\stm8s_it.o section .data, initialized
+_codedata11                         00009120   defined in Debug\upg.o section .const
+_connect_to_disconnecttime          0000012f   defined in Debug\main.o section .data, initialized
+                                               used in Debug\wireless_func.o
+_debugN                             0000020b   defined in Debug\upg.o section .bss
+_disp_index                         00000119   defined in Debug\led.o section .data, initialized
+                                               used in Debug\main.o
+                                                       Debug\wireless_func.o
+_disp_timer                         0000011a   defined in Debug\led.o section .data, initialized
+                                               used in Debug\charge.o
+                                                       Debug\main.o
+                                                       Debug\stm8s_it.o
+                                                       Debug\wireless_func.o
+_exit                               00009a9f   defined in C:\Program Files\COSMIC\CXSTM8\Lib\crtsi0.sm8 section .text
+_f_spistatus                        ********   *** removed from Debug\bt830.o ***
+_factory_test_flag                  0000014b   defined in Debug\wireless_func.o section .data, initialized
+_flag_charge_ing                    00000109   defined in Debug\charge.o section .data, initialized
+                                               used in Debug\main.o
+                                                       Debug\wireless_func.o
+_full_charge_flag                   0000013b   defined in Debug\main.o section .data, initialized
+_full_charge_time                   0000013a   defined in Debug\main.o section .data, initialized
+_i2c_bit_in                         0000acd5   defined in Debug\i2c.o section .text
+_i2c_bit_in_ACK                     0000ad03   defined in Debug\i2c.o section .text
+_i2c_bit_out                        0000acb9   defined in Debug\i2c.o section .text
+_i2c_buzy_flag                      00000106   defined in Debug\key.o section .data, initialized
+                                               used in Debug\wireless_func.o
+_i2c_byte_in                        0000ad6e   defined in Debug\i2c.o section .text
+_i2c_byte_out                       0000ad43   defined in Debug\i2c.o section .text
+_i2c_error                          00000112   defined in Debug\i2c.o section .data, initialized
+_i2c_recv                           0000ae3a   defined in Debug\i2c.o section .text
+_i2c_recv_W                         0000afa5   defined in Debug\i2c.o section .text
+_i2c_start                          0000ac79   defined in Debug\i2c.o section .text
+_i2c_stop                           0000ac9b   defined in Debug\i2c.o section .text
+_info_FCC_mode                      0000bed2   defined in Debug\wireless_func.o section .text
+_info_Stereo_Wireless_Rx_OFF        0000be5f   defined in Debug\wireless_func.o section .text
+_info_Stereo_Wireless_Rx_mute_OFF   0000be80   defined in Debug\wireless_func.o section .text
+_info_Tx_Wireless_Sod_BT_mode       0000bea2   defined in Debug\wireless_func.o section .text
+                                               used in Debug\key.o
+_info_Wireless_Rx_BT_state          0000be45   defined in Debug\wireless_func.o section .text
+_initUart                           0000b918   defined in Debug\uart.o section .text
+                                               used in Debug\main.o
+                                                       Debug\wireless_func.o
+_key_command                        00000150   defined in Debug\key.o section .bss
+_key_count                          0000017d   defined in Debug\main.o section .bss
+_key_was_press                      0000014f   defined in Debug\key.o section .bss
+_key_was_ready                      00000103   defined in Debug\key.o section .data, initialized
+_led_test_time                      0000012d   defined in Debug\main.o section .data, initialized
+                                               used in Debug\led.o
+                                                       Debug\wireless_func.o
+_led_test_time1                     0000012e   defined in Debug\main.o section .data, initialized
+                                               used in Debug\led.o
+_link_to_dislinktime                00000130   defined in Debug\main.o section .data, initialized
+                                               used in Debug\charge.o
+_main                               0000b81d   defined in Debug\main.o section .text
+                                               used in C:\Program Files\COSMIC\CXSTM8\Lib\crtsi0.sm8
+_myputc                             0000b93a   defined in Debug\uart.o section .text
+                                               used in Debug\wireless_func.o
+_myputstr                           0000b96f   defined in Debug\uart.o section .text
+                                               used in Debug\wireless_func.o
+_need_cut_time                      0000010b   defined in Debug\charge.o section .data, initialized
+_need_cut_time2                     0000010c   defined in Debug\charge.o section .data, initialized
+_new_old_board                      0000013d   defined in Debug\main.o section .data, initialized
+_pairing_flag                       0000012b   defined in Debug\main.o section .data, initialized
+                                               used in Debug\key.o
+                                                       Debug\wireless_func.o
+_powe_on_mute_flag                  0000013e   defined in Debug\main.o section .data, initialized
+_power_on_time                      00000121   defined in Debug\main.o section .data, initialized
+_poweroff_time                      00000135   defined in Debug\main.o section .data, initialized
+_prev_charge_status                 0000014a   defined in Debug\wireless_func.o section .data, initialized
+_pwm_value                          00000183   defined in Debug\stm8s_it.o section .bss
+_r_light_timer                      0000017a   defined in Debug\led.o section .bss
+_r_pwm_value                        00000114   defined in Debug\led.o section .data, initialized
+                                               used in Debug\upg.o
+                                                       Debug\wireless_func.o
+_rest_wireless_time                 00000123   defined in Debug\main.o section .data, initialized
+_rx_buff                            00000189   defined in Debug\uart.o section .bss
+                                               used in Debug\stm8s_it.o
+                                                       Debug\wireless_func.o
+_rx_count                           00000188   defined in Debug\uart.o section .bss
+                                               used in Debug\stm8s_it.o
+_rx_setup_data_count                0000030c   defined in Debug\upg.o section .bss
+_s_light_timer                      00000172   defined in Debug\led.o section .bss
+_s_pwm_value                        00000118   defined in Debug\led.o section .data, initialized
+_shor_key                           00000101   defined in Debug\key.o section .data, initialized
+                                               used in Debug\main.o
+_shor_key_time                      00000102   defined in Debug\key.o section .data, initialized
+                                               used in Debug\main.o
+_standby_charge_flag                00000137   defined in Debug\main.o section .data, initialized
+                                               used in Debug\charge.o
+                                                       Debug\wireless_func.o
+_standby_flag                       00000125   defined in Debug\main.o section .data, initialized
+                                               used in Debug\key.o Debug\charge.o
+                                                       Debug\wireless_func.o
+_standby_flag_SOD                   00000141   defined in Debug\main.o section .data, initialized
+                                               used in Debug\wireless_func.o
+_standby_time                       00000134   defined in Debug\main.o section .data, initialized
+_system_1Ms_Timer                   0000b63b   defined in Debug\main.o section .text
+                                               used in Debug\stm8s_it.o
+_system_1s_Timer                    0000b688   defined in Debug\main.o section .text
+_system_1s_Timer_FLAG               0000012c   defined in Debug\main.o section .data, initialized
+                                               used in Debug\stm8s_it.o
+_system_20ms_tick                   00000122   defined in Debug\main.o section .data, initialized
+                                               used in Debug\stm8s_it.o
+_system_2s_tick                     00000180   defined in Debug\main.o section .bss
+                                               used in Debug\stm8s_it.o
+_system_800ms_tick                  0000010a   defined in Debug\charge.o section .data, initialized
+                                               used in Debug\stm8s_it.o
+_t10ms                              00000184   defined in Debug\stm8s_it.o section .bss
+_t1second                           00000181   defined in Debug\stm8s_it.o section .bss
+_tSpiWriteAddr                      ********   *** removed from Debug\bt830.o ***
+_temper_check_time                  00000131   defined in Debug\main.o section .data, initialized
+_temper_protect_time                0000013c   defined in Debug\main.o section .data, initialized
+_temper_value                       00000132   defined in Debug\main.o section .data, initialized
+                                               used in Debug\charge.o
+_test_flash_ID                      0000011f   defined in Debug\main.o section .data, initialized
+_timer_20s                          00000128   defined in Debug\main.o section .data, initialized
+_uHAL_Akm7719_SPI_Write             00009dfe   defined in Debug\tas5711.o section .text
+_uHAL_Akm7719_SPI_Write_VOL         00009fd6   defined in Debug\tas5711.o section .text
+_up_state                           00000143   defined in Debug\uart.o section .data, initialized
+                                               used in Debug\main.o
+                                                       Debug\stm8s_it.o
+_vAPP_Akm7719_Dsp_Init              00009e83   defined in Debug\tas5711.o section .text
+                                               used in Debug\main.o
+_vCheck_SCL_Status                  0000ac3e   defined in Debug\i2c.o section .text
+_vClear_RxBuff                      0000b9de   defined in Debug\uart.o section .text
+_vFlash_Read_Status                 ********   *** removed from Debug\bt830.o ***
+_vHAL_Akm7719_control_reg_init      00009e1b   defined in Debug\tas5711.o section .text
+_vLedTick_10Ms                      0000b23b   defined in Debug\led.o section .text
+                                               used in Debug\stm8s_it.o
+_vLed_Disp_BatteryCharge            0000b0a2   defined in Debug\led.o section .text
+_vLed_Disp_BatteryCharge_TimeOut    0000b0d3   defined in Debug\led.o section .text
+_vLed_Disp_BatteryEmpty             0000b065   defined in Debug\led.o section .text
+_vLed_Disp_BatteryLow               0000b0ca   defined in Debug\led.o section .text
+_vLed_Disp_Charge_Full              0000b08c   defined in Debug\led.o section .text
+_vLed_Disp_DisConnect               0000b00c   defined in Debug\led.o section .text
+_vLed_Disp_Docked                   0000b0f0   defined in Debug\led.o section .text
+_vLed_Disp_Docking                  0000b10d   defined in Debug\led.o section .text
+_vLed_Disp_Docking_BatteryLow       0000b145   defined in Debug\led.o section .text
+_vLed_Disp_Parring                  0000b037   defined in Debug\led.o section .text
+_vLed_Disp_Separate                 0000b19c   defined in Debug\led.o section .text
+_vLed_Disp_Sod_Stereo               0000b269   defined in Debug\led.o section .text
+_vLed_Disp_Standby                  0000b272   defined in Debug\led.o section .text
+_vLed_Disp_USB_BatteryCharge        0000b0b6   defined in Debug\led.o section .text
+_vLed_Disp_UnDocking                0000b11f   defined in Debug\led.o section .text
+_vLed_Disp_UnDocking_BatteryLow     0000b169   defined in Debug\led.o section .text
+_vLed_Disp_pre_Separate             0000b1a5   defined in Debug\led.o section .text
+_vLed_Display_Erase                 0000bc3f   defined in Debug\upg.o section .text
+_vLed_Display_Upg                   0000b21c   defined in Debug\led.o section .text
+                                               used in Debug\main.o Debug\uart.o
+_vLed_Light_Process                 0000b1de   defined in Debug\led.o section .text
+                                               used in Debug\stm8s_it.o
+_vRxData_Start                      0000b9f3   defined in Debug\uart.o section .text
+_vUpg_Over                          0000ba00   defined in Debug\uart.o section .text
+_vol_buff                           00000153   defined in Debug\charge.o section .bss
+_vol_cnt                            00000152   defined in Debug\charge.o section .bss
+_voltage                            0000010f   defined in Debug\charge.o section .data, initialized
+                                               used in Debug\wireless_func.o
+_w_light_timer                      00000176   defined in Debug\led.o section .bss
+_w_pwm_value                        00000116   defined in Debug\led.o section .data, initialized
+                                               used in Debug\upg.o
+_wireless_int_pin_ERROR             00000129   defined in Debug\main.o section .data, initialized
+_wireless_upg_addr                  00000144   defined in Debug\upg.o section .data, initialized
+_y_light_timer                      00000178   defined in Debug\led.o section .bss
+_y_pwm_value                        00000115   defined in Debug\led.o section .data, initialized
+                                               used in Debug\upg.o
+c_divsl                             0000c69b   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)ldiv.o section .text
+                                               *** not used ***
+c_divul                             0000c6b2   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)ldiv.o section .text
+                                               used in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)ludiv.o
+c_imul                              0000c5f8   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)imul.o section .text
+                                               used in Debug\charge.o
+c_itolx                             0000c619   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)itolx.o section .text
+                                               used in Debug\upg.o
+c_lgadc                             0000c627   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lgadc.o section .text
+                                               used in Debug\bt830.o Debug\upg.o
+c_lgadd                             0000c637   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lgadd.o section .text
+                                               used in Debug\bt830.o
+                                                       Debug\stm8s_flash.o
+c_lgneg                             0000c786   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lgneg.o section .text
+                                               used in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)ldiv.o
+c_llsh                              0000c64e   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)llsh.o section .text
+                                               used in Debug\stm8s_uart2.o
+c_lneg                              0000c799   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lneg.o section .text
+                                               used in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)ldiv.o
+c_lreg                              00000000   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lreg.o section .ubsct
+                                               used in Debug\bt830.o
+                                                       Debug\stm8s_uart2.o
+                                                       Debug\stm8s_clk.o
+                                                       Debug\stm8s_flash.o
+                                                       Debug\upg.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)itolx.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lgadd.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)llsh.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lsub.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)ltor.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)ldiv.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lneg.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lursh.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)rtol.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)smul.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)umul.o
+c_lsub                              0000c65d   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lsub.o section .text
+                                               used in Debug\stm8s_uart2.o
+c_ltor                              0000c675   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)ltor.o section .text
+                                               used in Debug\bt830.o
+                                                       Debug\stm8s_uart2.o
+                                                       Debug\stm8s_clk.o
+                                                       Debug\stm8s_flash.o
+c_ludv                              0000c687   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)ludiv.o section .text
+                                               used in Debug\stm8s_uart2.o
+                                                       Debug\stm8s_clk.o
+c_lursh                             0000c7ae   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)lursh.o section .text
+                                               used in Debug\bt830.o
+                                                       Debug\stm8s_uart2.o
+c_pgadc                             0000c7bd   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)pgadc.o section .text
+                                               used in Debug\tas5711.o
+c_rtol                              0000c7c9   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)rtol.o section .text
+                                               used in Debug\stm8s_uart2.o
+                                                       Debug\stm8s_clk.o
+                                                       Debug\stm8s_flash.o
+c_sdivx                             0000c7e1   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)sdivx.o section .text
+                                               used in Debug\wireless_func.o
+c_smodx                             0000c7db   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)sdivx.o section .text
+                                               used in Debug\wireless_func.o
+c_smul                              0000c806   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)smul.o section .text
+                                               used in Debug\stm8s_uart2.o
+c_umul                              0000c845   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)umul.o section .text
+                                               used in Debug\stm8s_flash.o
+c_x                                 00000004   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)xreg.o section .ubsct
+                                               used in C:\Program Files\COSMIC\CXSTM8\Lib\crtsi0.sm8
+                                                       Debug\tas5711.o
+                                                       Debug\stm8s_flash.o
+                                                       Debug\stm8s_it.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)imul.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)ldiv.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)sdivx.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)umul.o
+c_y                                 00000007   defined in (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)yreg.o section .ubsct
+                                               used in C:\Program Files\COSMIC\CXSTM8\Lib\crtsi0.sm8
+                                                       Debug\stm8s_it.o
+                                                       (C:\Program Files\COSMIC\CXSTM8\Lib\libm0.sm8)umul.o
+f_ADC1_IRQHandler                   0000b8a5   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_AWU_IRQHandler                    0000b830   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_CLK_IRQHandler                    0000b831   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_EEPROM_EEC_IRQHandler             0000b917   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_EXTI_PORTA_IRQHandler             0000b832   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_EXTI_PORTB_IRQHandler             0000b833   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_EXTI_PORTC_IRQHandler             0000b834   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_EXTI_PORTD_IRQHandler             0000b835   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_EXTI_PORTE_IRQHandler             0000b836   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_I2C_IRQHandler                    0000b83e   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_NonHandledInterrupt               0000b82d   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_SPI_IRQHandler                    0000b837   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TIM1_CAP_COM_IRQHandler           0000b839   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TIM1_UPD_OVF_TRG_BRK_IRQHandler   0000b838   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TIM2_CAP_COM_IRQHandler           0000b83b   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TIM2_UPD_OVF_BRK_IRQHandler       0000b83a   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TIM3_CAP_COM_IRQHandler           0000b83d   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TIM3_UPD_OVF_BRK_IRQHandler       0000b83c   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TIM4_UPD_OVF_IRQHandler           0000b8a6   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TLI_IRQHandler                    0000b82f   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_TRAP_IRQHandler                   0000b82e   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_UART2_RX_IRQHandler               0000b840   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_UART2_TX_IRQHandler               0000b83f   defined in Debug\stm8s_it.o section .text
+                                               used in Debug\stm8_interrupt_vector.o
+f_ak77dspPRAM                       0000c881   defined in Debug\tas5711.o section .fconst

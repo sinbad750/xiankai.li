@@ -1,0 +1,129 @@
+#include "config.h"
+#include "main.h"
+#include "BT830.h"
+#include "key.h"
+#include "Tas5711.h"
+
+u16 bt_no_audio_time =0;
+u8 bt_power_on_flag=2;
+u8 bt_power_on_time;
+u8 bt_power_off_time;
+u8 bt_reconnect_do_time;
+u8 bt_stat_line_is_high_times=0;
+u8 bt_stat_line_is_low_times;
+u8 bt_unexpect_disconnect_low_times=0;
+
+u8 bt_reconnect_time=0;
+u8 bt_3min_reconnect_flag=0;
+void Bt_Init(void)
+{
+	
+	//BT_PIO18(LOW);
+	//BT_Reset(HIGH);
+}
+
+
+void Bluetooth_Power_on(void)
+	
+{
+       BT_Reset(LOW);
+	Wait_For_mSec(10);
+       bt_power_on_time=20;
+	bt_no_audio_time=0;
+	bt_power_on_ready_time=3;
+	bt_poweroff_time=0;
+	
+}
+
+
+void Bluetooth_Power_off(void)
+{
+
+if(bt_power_on_flag!=0)
+   {
+       //bt_power_off_time=80;
+       bt_power_off_time=40;
+       //  bt_power_on_flag=0;
+  }	
+}
+
+
+void Bluetooth_disconnect(void)
+{
+	BT_PIO18(HIGH);
+	Wait_For_mSec(20);
+	BT_PIO18(LOW);
+	Wait_For_mSec(120);
+	BT_PIO18(HIGH);
+	Wait_For_mSec(20);
+	BT_PIO18(LOW);
+	Wait_For_mSec(120);
+	BT_PIO18(HIGH);
+
+
+}
+
+ void bt_scan(void)
+ {
+
+     
+
+
+
+
+
+
+
+
+		   if(Sys_state==Sod_state)
+	 	   return;
+  
+                
+		if(!BT_STATUS_LED1()  )
+			{
+                          bt_stat_line_is_high_times=0;
+		             bt_stat_line_is_low_times++;
+
+				
+                           if(bt_stat_line_is_low_times>=60)
+                          {   
+                                if(bt_status==BT_STATUS_DISCONNECTED)
+                                	{
+				         TAS5711_mute(0);
+					  if(BT_3MIN_reconect<170)	 
+				             bt_3min_reconnect_flag=0;
+				   
+                                	}
+				    bt_status=BT_STATUS_CONNECTED;
+				//  disp_index =Disp_BT_connect;
+				    BT_3MIN_reconect=180;
+				    bt_reconnect_time=0;
+				    bt_stat_line_is_low_times=0;
+				  
+			
+                          }
+                          
+                        }
+                        else
+                        {
+                               bt_stat_line_is_low_times=0;
+                               bt_stat_line_is_high_times++;
+                             if(bt_stat_line_is_high_times>=3)
+                               {
+                                       if(bt_status==BT_STATUS_CONNECTED)
+				              TAS5711_mute(0);
+			                      bt_status=BT_STATUS_DISCONNECTED;	
+						
+
+                                    bt_stat_line_is_high_times=0;						
+                               }
+                    
+                        }
+
+     
+
+ }
+
+
+
+

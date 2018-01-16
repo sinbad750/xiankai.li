@@ -1,0 +1,205 @@
+#include "config.h"
+#include "main.h"
+#include "i2c.h"
+#include "Tas5711.h"
+#include "charge.h"
+#include "uart.h"
+#include "stm8s_spi.h"
+
+
+
+#define REG_SIZE 27
+unsigned char const akm_init_config_data[REG_SIZE][2]=
+{
+
+0xC0,0x3D,
+
+0xC1,0x00,
+0xC2,0x10,
+0xC3,0x02,
+0xC4,0x40,
+0xC5,0x00,
+
+0xC6,0x00,
+0xC7,0x00,
+0xC8,0xc0,
+0xC9,0x00,
+0xCA,0xE1,
+
+0xCC,0x03,
+0xCD,0x00,
+0xCE,0xFF,
+0xCF,0x30,
+0xD0,0x20,
+
+0xD2,0x00,
+0xD3,0x00,
+0xD4,0xFF,
+0xD5,0x30,
+0xD6,0x30,
+
+0xD7,0x30,
+0xD8,0x18,
+0xD9,0x18,
+0xDA,0x00,
+0xDB,0x00,
+
+0xC1,0x01, //27                                  
+};
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////
+
+void SPI_DSP_Init(void)
+{
+ 	SPI_DeInit();
+	SPI_Init(SPI_FIRSTBIT_MSB, SPI_BAUDRATEPRESCALER_256, SPI_MODE_MASTER, SPI_CLOCKPOLARITY_LOW, SPI_CLOCKPHASE_1EDGE, SPI_DATADIRECTION_2LINES_FULLDUPLEX, SPI_NSS_SOFT,(u8)0x07);
+	SPI_Cmd(ENABLE);
+}
+
+
+u8 SPI_DSP_SendByte(u8 byte)
+{
+  /* Loop while DR register in not emplty */
+  while(SPI_GetFlagStatus(SPI_FLAG_TXE) == RESET);
+
+  /* Send byte through the SPI1 peripheral */
+  SPI_SendData( byte);
+
+  /* Wait to receive a byte */
+  while(SPI_GetFlagStatus( SPI_FLAG_RXNE) == RESET);
+
+  /* Return the byte read from the SPI bus */
+  return SPI_ReceiveData();
+}
+
+
+u8 SPI_DSP_ReadByte(void)
+{
+  return (SPI_DSP_SendByte(Dummy_Byte));
+}
+
+
+
+void Dsp_Send_N_FF(u16 num)
+{
+
+
+  u16 i;
+
+ for(i=0;i<num;i++)
+  {
+       SPI_DSP_SendByte(0xff);
+  }
+  
+}
+
+
+
+u8 Dsp_Write_buf(u8 *buf,u16 len)
+{
+
+
+  u8 i;
+  u16 times;
+
+
+while(len)
+  {
+    for(i=0;i<4;i++)
+    {
+       SPI_DSP_SendByte(*buf);
+       buf++; 
+    }
+    len--;
+
+  }
+
+  return OK;
+  
+}
+
+/*
+u8 Dsp_WriteData(u8 *buf,u16 len)
+{
+
+
+  u8 i;
+  u16 times;
+
+  if(!READ_DSP_BSY()) return ;
+
+
+  SPI_DSP_CS(0);
+
+  SPI_DSP_SendByte(0x80);
+
+
+while(len)
+  {
+    for(i=0;i<4;i++)
+    {
+       SPI_DSP_SendByte(*buf);
+       buf++; 
+    }
+    len--;
+
+  }
+  delay_us(20);
+  SPI_DSP_CS(1);
+
+  return OK;
+  
+}
+*/
+
+u8 uHAL_Akm7719_SPI_Write(u8 addr, u8 data)
+{
+ SPI_DSP_CS(0);
+SPI_DSP_SendByte(addr);
+SPI_DSP_SendByte(data);
+ SPI_DSP_CS(1);
+}
+
+void vHAL_Akm7719_control_reg_init(void)
+{
+  u8 ii;
+  for(ii=0;ii<REG_SIZE;ii++)
+  	{
+  	   uHAL_Akm7719_SPI_Write(akm_init_config_data[ii][0],akm_init_config_data[ii][1]);
+	   Wait_For_mSec(5);
+  	}
+}
+
+
+
+
+void  vAPP_Akm7719_Dsp_Init(void)
+{
+
+ DSP_RESET(0);
+ Wait_For_mSec(10);
+DSP_RESET(1);
+ Wait_For_mSec(100);
+ vHAL_Akm7719_control_reg_init();
+  Wait_For_mSec(20);
+  
+
+SPI_DSP_CS(0);
+SPI_DSP_SendByte(0xcf);
+SPI_DSP_SendByte(0x38);
+ SPI_DSP_CS(1);
+  //DSP_RESET(0);
+  
+Wait_For_mSec(22);
+SPI_DSP_CS(0);
+SPI_DSP_SendByte(0xcf);
+SPI_DSP_SendByte(0x3c);
+SPI_DSP_CS(1);
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////

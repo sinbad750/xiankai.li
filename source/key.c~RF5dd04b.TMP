@@ -1,0 +1,466 @@
+#include "config.h"
+#include "main.h"
+#include "wireless_func.h"
+#include "Tas5711.h"
+#include "led.h"
+#include "upg.h"
+#include "BT830.h"
+#include "key.h"
+
+
+#include "uart.h"
+#include "i2c.h"
+bool STB_FLAG=0;
+bool key_was_ready=0;
+bool key_was_press;
+bool bt_do_not_reconnect_flag=0;
+u8 key_command;
+bool BT_R_nfc_disable_flag=0;
+bool i2c_buzy_flag=0;
+u8 not_change_bt_mono_flag=0;
+void Power_onoff_board(u8 onoff)
+
+{
+   if(onoff)
+   	{
+   	GPIO_WriteLow(GPIOB, GPIO_PIN_2);
+   	}
+   else
+   	{
+   	GPIO_WriteHigh(GPIOB, GPIO_PIN_2);
+   	}
+
+}
+
+void Power_Off_direct(void)
+{
+
+	STB_FLAG=1;
+
+	//Switch_Wireless_Rx() ;
+	info_Tx_Wireless_Sod_BT_mode(1);
+	   Wait_For_mSec(300);
+	if ((Sys_state!=Sod_state)||(bt_status==BT_STATUS_CONNECTED))
+	    Wireless_Reset();
+	
+
+
+	         Wait_For_mSec(200);
+
+	
+	GPIO_WriteHigh(GPIOC,GPIO_PIN_2);
+	GPIO_WriteHigh(GPIOC,GPIO_PIN_1);
+	GPIO_WriteHigh(GPIOE,GPIO_PIN_6);
+	GPIO_WriteHigh(GPIOE,GPIO_PIN_5);
+	
+        System_PowerOff();
+		
+	GPIO_Init(GPIOB, GPIO_PIN_2, GPIO_MODE_OUT_PP_HIGH_FAST);	
+	Power_onoff_board(OFF);
+	//while(1);
+
+}
+
+
+void Change_Back_to_SOD(void)
+{
+
+
+
+	
+	Switch_Wireless_Rx(); // LXK 2015 0625
+   if(!bt_power_on_ready_time)
+    	{
+	    ;
+      	}
+	 else
+	{
+	 bt_poweroff_time=4;
+	 //TAS5711_mute(1);
+	// GPIO_WriteLow(GPIOB, GPIO_PIN_4);    //AMP MUTE
+       }
+	Wireless_Reset();
+	Sys_state=Sod_state;	
+
+	
+	
+}
+
+unsigned char Key_Value(void)
+{
+	u8 temp;
+	temp=0;
+
+#ifdef  muti_key
+	if(Sys_state==Sod_state)
+
+	{
+	       if((GPIO_ReadInputPin(GPIOA,GPIO_PIN_4)==0)&&(GPIO_ReadInputPin(GPIOB,GPIO_PIN_7)==0))
+		   	
+	            return 0X05;
+
+	       if((GPIO_ReadInputPin(GPIOA,GPIO_PIN_4)==0)&&(GPIO_ReadInputPin(GPIOB,GPIO_PIN_6)==0))
+		   	
+	           return 0X06;	   
+	}
+
+#endif
+
+	
+	#ifdef  DVR1
+	
+               temp = GPIO_ReadInputPin(GPIOA,GPIO_PIN_4); // ONOFF KEY
+	
+	if(temp == 0x00)
+		return 0x02;
+	
+	 #endif  
+
+
+	 
+       temp = GPIO_ReadInputPin(GPIOB,GPIO_PIN_7); //BT KEY
+	
+	if(temp == 0x00)
+		return 0x03;
+	
+	temp = GPIO_ReadInputPin(GPIOB,GPIO_PIN_6);// SOD KEY 
+	
+	if(temp == 0x00)
+		return 0x04;
+
+	
+	return KEY_DUMMY;
+}
+
+
+
+void Key_Scan(void)
+{
+  static unsigned short repeat_count;
+  static unsigned char prev_key=KEY_DUMMY;
+  unsigned char curr_key;
+  
+  if(key_was_ready)
+  	return;
+  else
+  	{
+		key_was_press=FALSE;
+		if(KEY_DUMMY!=Key_Value())
+		{
+			curr_key=Key_Value();
+			if(curr_key==prev_key)
+			{
+				if(repeat_count<500)
+					repeat_count++;
+					key_command=curr_key;
+			}
+			key_was_press=TRUE;
+			prev_key=curr_key;
+		}
+  	}
+  
+  switch(key_command)
+  	{
+  	case 0x01:
+	case 0x02:
+	case 0x03:
+	case 0x04:
+		if((repeat_count>3)&&(repeat_count<200)&&(!key_was_press))
+			{
+				key_command |= SHORT_PRESS;
+				key_was_ready=TRUE;
+				return;
+			}
+		else if(repeat_count>220)
+			{
+			        key_command |= LONG_PRESS;
+				key_was_ready=TRUE;
+				repeat_count=0;
+				return;
+			}
+		break;
+		
+#ifdef  muti_key
+
+	case 0x05:
+	case 0x06:
+		
+	        if(repeat_count>180)
+			{
+			        key_command |= LONG_PRESS;
+				key_was_ready=TRUE;
+				repeat_count=0;
+				return;
+			}
+		break;	
+
+		
+ #endif  	
+ 
+	default:
+		break;
+  	}
+  if(!key_was_press)
+  	{
+	  	prev_key=KEY_DUMMY;
+		key_command=KEY_DUMMY;
+		repeat_count=0;
+  	}
+}
+
+
+void Key_Service(void)
+{
+  unsigned char KeyCode;
+  KeyCode=KEY_DUMMY;
+  if(key_was_ready)
+  	{
+			KeyCode=key_command;
+			key_was_ready=FALSE;
+  	}
+  switch(KeyCode)
+  	{
+  		case KEY_BT:
+			 if(LR_Flag==0)
+		          return;
+			if((Sys_state==Stereo_state)&&(not_change_bt_mono_flag))
+				return;
+               if((Sys_state!=BT_state)&&(Link_State!=Link_On))
+                 {
+                  
+						
+			// info_Tx_Wireless_Sod_BT_mode(1);
+	                 if(Sys_state==Stereo_state)
+	                 	{
+
+					//   Wireless_Reset();
+					Wireless_Write_main_ConectCode();
+					
+						if(LR_Flag==2)   
+						{ 
+						Switch_Wireless_Rx() ;
+					  
+						Wireless_Reset();
+					        }
+
+
+						if(LR_Flag==1)   
+						{
+						//Switch_Wireless_Rx() ;
+						//Wireless_Reset();
+					        bt_do_not_reconnect_flag=1;
+					        }
+				}
+					 
+				rx_no_standby_time=2;
+				re_sent_command0_time=0;
+
+				Wait_For_mSec(100);
+
+				info_Tx_Wireless_Sod_BT_mode(1); //resent
+				re_sent_command1_time=2;
+				Sys_state=BT_state;
+
+			    //if(bt_power_on_flag==0)
+                        //Wait_For_mSec(100);
+			    //TasTpa5050_Device_Init(1);
+			    //Wait_For_mSec(100);
+			    if( bt_power_on_flag!=1)
+				Bluetooth_Power_on();
+
+				//MONO_BT_Sound();
+				
+				//Switch_Wireless_Tx()   
+			
+			
+	         }
+
+		break;
+
+
+		case KEY_LPress_SOD:   
+		case KEY_SOD:   
+                // 	if(bt_power_on_ready_time)  return;
+
+                 if(Sys_state!=Sod_state)
+                 {
+                                info_Tx_Wireless_Sod_BT_mode(0);
+				 
+                    if(Sys_state==Stereo_state)
+                	{
+     
+                         Wireless_Write_main_ConectCode();	
+				if(LR_Flag==2)		 
+			     TasTpa5050_Device_Init(0);
+			}
+			 re_sent_command1_time=0;
+                         Change_Back_to_SOD();
+
+		        if(Sys_state==BT_state)
+	  	        {
+	  	       
+	  	        }	
+			 re_sent_command0_time=4;
+		
+			
+
+			 rx_no_standby_time=0;
+		       info_Tx_Wireless_Sod_BT_mode(0);
+                 }      
+	
+                        break; 
+
+					
+		case KEY_STEREO:   
+		  if(Sys_state!=KEY_SOD)
+		  	{
+                        #ifndef  DVR1
+                             Sys_state=Stereo_state;
+		  	        SOD_STEREO_Sound();	
+		  	        Wireless_Write_SOD_ConectCode();						
+			
+				disp_index=Disp_SOD_Stereo;
+				TAS5711_mute(0);
+				if(LR_Flag==2) //L
+				{
+				
+				Switch_Wireless_Tx(); 
+				Wireless_Reset();
+				rest_wireless_time=3;    //Wait_For_mSec(2000);
+				
+
+				}
+				else if(LR_Flag==1)  //R
+				{
+				Change_to_Strereo_mode();
+				Switch_AUDIO_SOD(); 
+				Switch_Wireless_Rx();  // LXK 2015 0625
+				
+				R_Stereo_no_synic_time=0;
+				}
+
+				bt_no_audio_time=0;
+
+
+			 #endif	
+		  	}
+                        break; 
+						
+		        // case KEY_LPress_SOD:   
+				
+         	       // break; 
+
+      #ifdef  DVR1
+
+                     	case KEY_OFF_POWER:   
+			if(Link_State!=Link_On)
+				{
+                           Power_Off_direct();		
+				}
+         	       break; 
+
+
+			case KEY_GO_STEREO:   
+		   //if(stereo_enable_time)
+		//	return; 
+	
+			#if  1
+		      if(Sys_state==BT_state)
+		  	{
+		  	       clear_rx_buffuer();
+				Wait_For_mSec(20);
+				Sys_state  =  Stereo_state;
+				Stereo_no_synic_time=0;
+				Wireless_Write_SOD_ConectCode();	
+				i2c_buzy_flag=1;
+				Wireless_State=_Wireless_None_Connect;
+				
+				disp_index=Disp_SOD_Stereo;
+			   
+				if(LR_Flag==2) //L
+				{
+				
+				Switch_Wireless_Tx(); 
+				Wait_For_mSec(2);
+				Wireless_Reset();
+				rest_wireless_time=3;    //  Wait_For_mSec(2000);
+				TasTpa5050_Device_Init(1);
+
+				}
+			//	else if(LR_Flag==1)  //R
+				else
+				{
+                                 rx_no_standby_time=0;
+				
+				Change_to_Strereo_mode();
+				Wait_For_mSec(200);
+			 	
+				Wait_For_mSec(2);
+				//	TAS5711_mute(1);
+				Wireless_Reset();
+				rest_wireless_time=5; 
+	
+				BT_R_nfc_disable_flag=1;
+				R_Stereo_no_synic_time=0;
+				Wait_For_mSec(100); 	
+
+				}
+
+			      
+				i2c_buzy_flag=0;
+				bt_no_audio_time=0;
+				
+		  	}
+			  #endif
+                        break;    
+    #endif	
+
+#ifdef  muti_key
+
+      case REST_PAIRING_KEY:  
+	  	{
+	     Rest_Pairing_Code();
+	      	led_test_time=7;
+			}
+         	       break; 
+
+      case  PAIRING_KEY:  
+	           {
+			Wireless_Goto_Pairing();
+			pairing_flag=60;
+		
+				}
+         	       break; 
+#endif	
+	
+		default:
+		break;
+  	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

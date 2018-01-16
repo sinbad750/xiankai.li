@@ -1,0 +1,12 @@
+;	STMicroelectronics Workspace file
+
+[Version]
+Keyword=ST7Workspace-V0.7
+
+[Project0]
+Filename=htl9100_wireless.stp
+Dependencies=
+[Options]
+ActiveProject=htl9100_wireless
+ActiveConfig=Debug
+AddSortedElements=0
